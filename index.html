@@ -4,35 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SailsPay</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/png" href="assets/img/logo/logo.png">
+
     <!-- ✅ External Scroll CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itswadesh/netflix-scroll/netflix-scroll.css" />
-    <style>
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-            100% {
-                transform: translateX(calc(-200px * 6));
-            }
-        }
-
-        .animate-scroll {
-            animation: scroll 30s linear infinite;
-            display: flex;
-            width: calc(200px * 12);
-            will-change: transform;
-            /* For smoother animation */
-        }
-
-        /* Optional: Pause animation on hover */
-        .animate-scroll:hover {
-            animation-play-state: paused;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-white text-black">
@@ -41,9 +25,8 @@
         <div
             class="container mx-auto flex flex-row lg:flex-row justify-center items-center px-4 py-2 gap-2 md:gap-4 lg:gap-6">
             <div class="flex flex-wrap gap-1.5 justify-center items-center text-center lg:text-left">
-                <p class="text-white font-semibold  text-[.7rem] sm:text-sm md:text-base lg:text-lg">SailsPay is now
-                    <span class="text-[#1a91bb]">RBI
-                        Authorised</span> Payment Aggregator
+                <p class="text-white font-semibold  text-[.7rem] sm:text-sm md:text-base lg:text-lg">Welcome to
+                    <span class="text-[#1a91bb]">SailsPay</span> Payment Aggregator
                 </p>
                 <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/approval-logo.svg" alt=""
                     class="w-4 md:w-5 h-auto">
@@ -62,21 +45,211 @@
             <!-- Logo -->
             <div class="flex-shrink-0">
                 <a href="#" class="inline-block">
-                    <img src="assets/img/logo/logo.png" alt="Easebuzz Logo" class="w-24 sm:w-28 lg:w-32 object-contain">
+                    <img src="assets/img/logo/logo.png" alt=" Logo" class="w-24 sm:w-28 lg:w-32 object-contain">
                 </a>
             </div>
+
+            <!-- Nav Menu -->
+            <div class="hidden md:inline-block">
+                <div class="flex items-center justify-center ">
+                    <ul class="flex items-center gap-6">
+                        <li class="relative group">
+                            <button onclick="toggleDropdown('productsDropdown')"
+                              class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                              Products
+                              <span
+                                class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </button>
+                          
+                            <!-- Dropdown Menu -->
+                            <ul id="productsDropdown"
+                              class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden hidden transition-all duration-300 z-50">
+                              <li>
+                                <a href="#"
+                                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f9ff] hover:text-[#108fba] transition">Payment Gateway</a>
+                              </li>
+                              <li>
+                                <a href="#"
+                                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f9ff] hover:text-[#108fba] transition">Payment Link</a>
+                              </li>
+                            </ul>
+                          </li>
+                          
+                        <li>
+                            <a href="#"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Pricing
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Developers
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Support
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Resources
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Blog
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
 
 
             <!-- Buttons -->
             <div class="flex items-center gap-3">
                 <button
-                    class="border border-[##1a91bb] text-[#1a91bb] rounded-md px-4 py-1 font-semibold hover:bg-[#6d44e5] hover:border-[#6d44e5] hover:text-[#85E6C4] transition-all duration-300 cursor-pointer">
+                    class="hidden sm:inline-block border border-[#1a91bb] text-[#1a91bb] rounded-md px-4 py-1 font-semibold hover:bg-[#6d44e5] hover:border-[#6d44e5] hover:text-[#85E6C4] transition-all duration-300 cursor-pointer">
                     Login
                 </button>
+
+
                 <button
-                    class="bg-[#517ce3] text-white border border-[#517ce3] rounded-md px-4 py-1 font-semibold hover:bg-[#6d44e5] hover:border-[#6d44e5] hover:text-[#85E6C4] transition-all duration-300 cursor-pointer">
+                    class="hidden sm:inline-block bg-[#517ce3] text-white border border-[#517ce3] rounded-md px-4 py-1 font-semibold hover:bg-[#6d44e5] hover:border-[#6d44e5] hover:text-[#85E6C4] transition-all duration-300 cursor-pointer">
                     Sign Up
                 </button>
+                <button class="  bg-slate-200 px-4 py-1 rounded-md hover:bg-slate-300 cursor-pointer md:hidden"
+                    id="openSidebarBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div id="sidebarOverlay" class="w-full h-full fixed inset-0 bg-[rgba(33,37,41,0.94)] z-50 hidden">
+        <!-- Close Button -->
+        <button id="closeSidebarBtn"
+            class="absolute top-5 right-5 text-4xl text-white hover:text-slate-300 cursor-pointer">
+            &times;
+        </button>
+
+        <div class="px-5 pt-20 pb-10 h-full">
+            <div class="bg-white shadow-lg flex flex-col rounded-md h-full">
+
+                <!-- Top Logo -->
+                <div class="flex items-center justify-center h-20 border-b shrink-0">
+                    <img src="assets/img/logo/logo.png" alt="Logo" class="h-10" />
+                </div>
+
+                <!-- Scrollable Menu -->
+                <div class="flex-1 overflow-y-auto px-6 py-6 bg-white">
+                    <ul class="space-y-2">
+
+                        <!-- Products Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('products-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Products
+                                    <i id="arrow-icon-products-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="products-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Payment Gateway</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Payment Link</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Developers Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('developers-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Developers
+                                    <i id="arrow-icon-developers-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="developers-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Getting Started</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Integration Docs</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">API Reference</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">FAQs</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Static Links -->
+                        <li class="border-b border-b-gray-700">
+                            <a href="#"
+                                class="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">Pricing</a>
+                        </li>
+                        <li class="border-b border-b-gray-700">
+                            <a href="#"
+                                class="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">Support</a>
+                        </li>
+
+                        <!-- Resources Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('resources-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Resources
+                                    <i id="arrow-icon-resources-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="resources-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Plugins</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Merchant Account</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">UPI</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">PG Integration</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Tokenization</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="border-b border-b-gray-700">
+                            <a href="#"
+                                class="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">Blog</a>
+                        </li>
+
+                        <!-- Company Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('company-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Company
+                                    <i id="arrow-icon-company-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="company-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">About Us</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Terms & Conditions</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Privacy Policy</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Contact Us</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -87,67 +260,77 @@
                 <!-- Carousel Wrapper -->
                 <div class="relative h-56 md:h-96 overflow-hidden rounded-lg">
                     <!-- Carousel Items Container -->
-                    <div class="relative w-full h-full flex transition-transform duration-700 ease-in-out" data-carousel-container>
+                    <div class="relative w-full h-full flex transition-transform duration-700 ease-in-out"
+                        data-carousel-container>
                         <!-- Carousel Item 1 -->
                         <div class="w-full flex-shrink-0" data-carousel-item>
                             <div class="relative w-full h-full">
                                 <img src="https://framerusercontent.com/images/RieeZSgqD36zjJi3dS0VM0t90.png"
                                     class="w-full h-full object-cover md:object-contain object-right"
                                     alt="Payment Solutions" />
-                                
+
                                 <!-- Text Overlay -->
-                                <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
-                                <div class="absolute z-30 inset-0 flex flex-col items-start justify-center px-6 sm:px-12 lg:px-16 text-left text-black">
-                                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                                <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent">
+                                </div>
+                                <div
+                                    class="absolute z-30 inset-0 flex flex-col items-start justify-center px-6 sm:px-12 lg:px-16 text-left text-black">
+                                    <h2 class="text-2xl sm:text-xl md:text-4xl lg:text-5xl font-bold leading-tight">
                                         <span class="text-[#517CE3]">Advanced Payment Solutions</span><br />
                                         for India's Finest Distributors
                                     </h2>
-                                    <p class="mt-4 text-sm sm:text-base md:text-lg text-gray-700 max-w-xl">
+                                    <p class="mt-2 text-sm sm:text-base md:text-lg text-gray-700 max-w-xl">
                                         Quick Payments | Seamless Integration | Secure Transactions
                                     </p>
-                                    <div class="mt-6 flex flex-wrap gap-4">
-                                        <button class="bg-[#517ce3] cursor-pointer text-white px-4 sm:px-6 py-2 rounded-md hover:bg-[#6d44e5] transition-all duration-300 font-semibold text-sm sm:text-base">
+                                    <div class="mt-4 flex flex-wrap gap-4">
+                                        <button
+                                            class="bg-[#517ce3] cursor-pointer text-white px-2 sm:px-2 py-1 sm:py-1 rounded-md hover:bg-[#6d44e5] transition-all duration-300 font-semibold text-sm sm:text-base">
                                             Sign Up Now
                                         </button>
-                                        <button class="border cursor-pointer border-[#517ce3] text-[#517ce3] px-4 sm:px-6 py-2 rounded-md hover:bg-[#6d44e5] hover:text-white transition-all duration-300 font-semibold text-sm sm:text-base">
+                                        <button
+                                            class="border cursor-pointer border-[#517ce3] text-[#517ce3] px-1 sm:px-2 py-2 rounded-md hover:bg-[#6d44e5] hover:text-white transition-all duration-300 font-semibold text-sm sm:text-base">
                                             Know More
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-    
-                        <!-- Carousel Item 2 -->
                         <div class="w-full flex-shrink-0" data-carousel-item>
                             <div class="relative w-full h-full">
                                 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                                     class="w-full h-full object-cover md:object-contain object-right"
-                                    alt="Secure Transactions" />
-                                
+                                    alt="Payment Solutions" />
+
                                 <!-- Text Overlay -->
-                                <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
-                                <div class="absolute z-30 inset-0 flex flex-col items-start justify-center px-6 sm:px-12 lg:px-16 text-left text-black">
-                                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                                <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent">
+                                </div>
+                                <div
+                                    class="absolute z-30 inset-0 flex flex-col items-start justify-center px-6 sm:px-12 lg:px-16 text-left text-black">
+                                    <h2 class="text-2xl sm:text-xl md:text-4xl lg:text-5xl font-bold leading-tight">
                                         <span class="text-[#517CE3]">Secure Payment Gateway</span><br />
                                         Trusted by Thousands
                                     </h2>
-                                    <p class="mt-4 text-sm sm:text-base md:text-lg text-gray-700 max-w-xl">
+                                    <p class="mt-2 text-sm sm:text-base md:text-lg text-gray-700 max-w-xl">
                                         PCI DSS Compliant | 99.9% Uptime | Instant Settlements
                                     </p>
-                                    <div class="mt-6 flex flex-wrap gap-4">
-                                        <button class="bg-[#517ce3] cursor-pointer text-white px-4 sm:px-6 py-2 rounded-md hover:bg-[#6d44e5] transition-all duration-300 font-semibold text-sm sm:text-base">
-                                            Get Started
+                                    <div class="mt-4 flex flex-wrap gap-4">
+                                        <button
+                                            class="bg-[#517ce3] cursor-pointer text-white px-2 sm:px-2 py-1 sm:py-1 rounded-md hover:bg-[#6d44e5] transition-all duration-300 font-semibold text-sm sm:text-base">
+                                            Sign Up Now
                                         </button>
-                                        <button class="border cursor-pointer border-[#517ce3] text-[#517ce3] px-4 sm:px-6 py-2 rounded-md hover:bg-[#6d44e5] hover:text-white transition-all duration-300 font-semibold text-sm sm:text-base">
-                                            View Features
+                                        <button
+                                            class="border cursor-pointer border-[#517ce3] text-[#517ce3] px-1 sm:px-2 py-2 rounded-md hover:bg-[#6d44e5] hover:text-white transition-all duration-300 font-semibold text-sm sm:text-base">
+                                            Know More
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Carousel Item 2 -->
+
                     </div>
                 </div>
-    
+
                 <!-- Carousel Controls -->
                 <button type="button"
                     class="absolute top-1/2 left-4 z-30 flex items-center justify-center h-auto px-2 cursor-pointer group focus:outline-none -translate-y-1/2"
@@ -160,7 +343,7 @@
                         </svg>
                     </span>
                 </button>
-    
+
                 <button type="button"
                     class="absolute top-1/2 right-4 z-30 flex items-center justify-center h-auto px-2 cursor-pointer group focus:outline-none -translate-y-1/2"
                     data-carousel-next>
@@ -172,17 +355,19 @@
                         </svg>
                     </span>
                 </button>
-    
+
                 <!-- Carousel Indicators -->
                 <div class="absolute bottom-4 left-1/2 z-30 flex -translate-x-1/2 space-x-2" data-carousel-indicators>
-                    <button type="button" class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-[#517ce3]/30 hover:bg-[#517ce3]/50 transition-all" aria-current="true" data-carousel-slide-to="0"></button>
-                    <button type="button" class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-[#517ce3]/30 hover:bg-[#517ce3]/50 transition-all" data-carousel-slide-to="1"></button>
+                    <button type="button"
+                        class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-[#517ce3]/30 hover:bg-[#517ce3]/50 transition-all"
+                        aria-current="true" data-carousel-slide-to="0"></button>
+                    <button type="button"
+                        class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-[#517ce3]/30 hover:bg-[#517ce3]/50 transition-all"
+                        data-carousel-slide-to="1"></button>
                 </div>
             </div>
         </div>
     </section>
-    
-    
 
     <!-- Netflix-style horizontal scroll animation -->
     <div class="px-4 sm:px-6 lg:px-24 xl:px-40 py-4 bg-[rgb(241_245_250)]">
@@ -191,54 +376,42 @@
                 style="-webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0)); mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0));">
                 <!-- First set of items -->
                 <div class="min-w-[200px] h-[100px] rounded-md flex items-center justify-center bg-white p-2 shadow-sm">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/4.png" alt="Payment method"
-                        class="h-full w-auto object-contain">
+                    <img src="assets/img/4.png" alt="Payment method" class="h-full w-auto object-contain">
                 </div>
                 <div class="min-w-[200px] h-[100px] rounded-md flex items-center justify-center bg-white p-2 shadow-sm">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/12.png" alt="Payment method"
-                        class="h-full w-auto object-contain">
+                    <img src="assets/img/12.png" alt="Payment method" class="h-full w-auto object-contain">
                 </div>
                 <div class="min-w-[200px] h-[100px] rounded-md flex items-center justify-center bg-white p-2 shadow-sm">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/13.png" alt="Payment method"
-                        class="h-full w-auto object-contain">
+                    <img src="assets/img/13.png" alt="Payment method" class="h-full w-auto object-contain">
                 </div>
                 <div class="min-w-[200px] h-[100px] rounded-md flex items-center justify-center bg-white p-2 shadow-sm">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/14.png" alt="Payment method"
-                        class="h-full w-auto object-contain">
+                    <img src="assets/img/14.png" alt="Payment method" class="h-full w-auto object-contain">
                 </div>
                 <div class="min-w-[200px] h-[100px] rounded-md flex items-center justify-center bg-white p-2 shadow-sm">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/15.png" alt="Payment method"
-                        class="h-full w-auto object-contain">
+                    <img src="assets/img/15.png" alt="Payment method" class="h-full w-auto object-contain">
                 </div>
                 <div class="min-w-[200px] h-[100px] rounded-md flex items-center justify-center bg-white p-2 shadow-sm">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/16.png" alt="Payment method"
-                        class="h-full w-auto object-contain">
+                    <img src="assets/img/16.png" alt="Payment method" class="h-full w-auto object-contain">
                 </div>
 
                 <!-- Duplicate set for seamless looping -->
                 <div class="min-w-[200px] h-[100px] rounded-md flex items-center justify-center bg-white p-2 shadow-sm">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/4.png" alt="Payment method"
-                        class="h-full w-auto object-contain">
+                    <img src="assets/img/4.png" alt="Payment method" class="h-full w-auto object-contain">
                 </div>
                 <div class="min-w-[200px] h-[100px] rounded-md flex items-center justify-center bg-white p-2 shadow-sm">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/12.png" alt="Payment method"
-                        class="h-full w-auto object-contain">
+                    <img src="assets/img/12.png" alt="Payment method" class="h-full w-auto object-contain">
                 </div>
                 <div class="min-w-[200px] h-[100px] rounded-md flex items-center justify-center bg-white p-2 shadow-sm">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/13.png" alt="Payment method"
-                        class="h-full w-auto object-contain">
+                    <img src="assets/img/13.png" alt="Payment method" class="h-full w-auto object-contain">
                 </div>
                 <div class="min-w-[200px] h-[100px] rounded-md flex items-center justify-center bg-white p-2 shadow-sm">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/14.png" alt="Payment method"
-                        class="h-full w-auto object-contain">
+                    <img src="assets/img/14.png" alt="Payment method" class="h-full w-auto object-contain">
                 </div>
                 <div class="min-w-[200px] h-[100px] rounded-md flex items-center justify-center bg-white p-2 shadow-sm">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/15.png" alt="Payment method"
-                        class="h-full w-auto object-contain">
+                    <img src="assets/img/15.png" alt="Payment method" class="h-full w-auto object-contain">
                 </div>
                 <div class="min-w-[200px] h-[100px] rounded-md flex items-center justify-center bg-white p-2 shadow-sm">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/16.png" alt="Payment method"
-                        class="h-full w-auto object-contain">
+                    <img src="assets/img/16.png" alt="Payment method" class="h-full w-auto object-contain">
                 </div>
             </div>
         </div>
@@ -256,7 +429,7 @@
                     Your Website Or App
                 </h2>
                 <p class="text-slate-500 mt-4">
-                    Easebuzz payment gateway provides a secure and reliable method of accepting online payments for your
+                    SailsPay payment gateway provides a secure and reliable method of accepting online payments for your
                     business.
                     <br>
                     It comes with best-in-class features like seamless checkout experience, automated reconciliation,
@@ -267,11 +440,11 @@
                 <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 px-2 mb-4 ">
                     <div class="shadow-md h-auto rounded-lg p-5 flex flex-col">
                         <div class="flex justify-start items-center mb-5">
-                            <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/best-pg/success_rate.svg"
-                                alt="">
+                            <img src="assets/img/icon/1.png" class="h-20" alt="">
                         </div>
                         <div class="font-semibold text-xl">Success Rate Over 95%</div>
-                        <div class="text-slate-500 pt-2 line-clamp-2">ayment success rates for enhanced customer experience
+                        <div class="text-slate-500 pt-2 line-clamp-2">ayment success rates for enhanced customer
+                            experience
                             and improved business revenues</div>
                     </div>
                 </div>
@@ -279,11 +452,11 @@
                 <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 px-2 mb-4 ">
                     <div class="shadow-md h-auto rounded-lg p-5 flex flex-col">
                         <div class="flex justify-start items-center mb-5">
-                            <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/best-pg/success_rate.svg"
-                                alt="">
+                            <img src="assets/img/icon/2.png" class="h-20" alt="">
                         </div>
                         <div class="font-semibold text-xl">iframe Checkout</div>
-                        <div class="text-slate-500 pt-2 line-clamp-2">he hosted checkout page on your website or app easily
+                        <div class="text-slate-500 pt-2 line-clamp-2">he hosted checkout page on your website or app
+                            easily
                             and offer seamless checkouts for your customers</div>
                     </div>
                 </div>
@@ -291,30 +464,29 @@
                 <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 px-2 mb-4 ">
                     <div class="shadow-md h-auto rounded-lg p-5 flex flex-col">
                         <div class="flex justify-start items-center mb-5">
-                            <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/best-pg/success_rate.svg"
-                                alt="">
+                            <img src="assets/img/icon/3.png" class="h-20" alt="">
                         </div>
                         <div class="font-semibold text-xl">Instant Setelment</div>
-                        <div class="text-slate-500 pt-2 line-clamp-2">ettle your online payment gateway funds to your bank
+                        <div class="text-slate-500 pt-2 line-clamp-2">ettle your online payment gateway funds to your
+                            bank
                             account. The settlement can be done via dashboard or APIs</div>
                     </div>
                 </div>
                 <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 px-2 mb-4 ">
                     <div class="shadow-md h-auto rounded-lg p-5 flex flex-col">
                         <div class="flex justify-start items-center mb-5">
-                            <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/best-pg/success_rate.svg"
-                                alt="">
+                            <img src="assets/img/icon/4.png" class="h-20" alt="">
                         </div>
                         <div class="font-semibold text-xl">Instant Refunds</div>
-                        <div class="text-slate-500 pt-2 line-clamp-2">ightning-fast refunds directly through the dashboard
+                        <div class="text-slate-500 pt-2 line-clamp-2">ightning-fast refunds directly through the
+                            dashboard
                             or via APIs</div>
                     </div>
                 </div>
                 <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 px-2 mb-4 ">
                     <div class="shadow-md h-auto rounded-lg p-5 flex flex-col">
                         <div class="flex justify-start items-center mb-5">
-                            <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/best-pg/success_rate.svg"
-                                alt="">
+                            <img src="assets/img/icon/5.png" class="h-20" alt="">
                         </div>
                         <div class="font-semibold text-xl">Easy Integration</div>
                         <div class="text-slate-500 pt-2 line-clamp-2">riendly APIs and plugins to ease the integration
@@ -324,11 +496,11 @@
                 <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 px-2 mb-4">
                     <div class="shadow-md h-auto rounded-lg p-5 flex flex-col">
                         <div class="flex justify-start items-center mb-5">
-                            <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/best-pg/success_rate.svg"
-                                alt="">
+                            <img src="assets/img/icon/6.png" class="h-20" alt="">
                         </div>
                         <div class="font-semibold text-xl">Dedicated technical support</div>
-                        <div class="text-slate-500 pt-2 line-clamp-2 ">24*7 technical support to help you with your integrations and
+                        <div class="text-slate-500 pt-2 line-clamp-2 ">24*7 technical support to help you with your
+                            integrations and
                             any queries</div>
                     </div>
                 </div>
@@ -350,18 +522,17 @@
             <!-- Grid for payment options or icons -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-white rounded-lg shadow-md">
                 <div class=" p-6 flex flex-col">
-                    <div class=" flex items-center mb-5">
+                    <div class=" flex items-center mb-5  space-x-4">
                         <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/icon/icon_7.svg" alt=""
-                            class="w-10 mr-4">
-                        <span class="text-3xl font-semibold">150+ Payment Option</span>
+                            class="w-8 sm:w-10 flex-shrink-0">
+                        <span class="text-2xl font-semibold">150+ Payment Option</span>
                     </div>
                     <p class="text-slate-800">Offer wide range of online payment modes to your customers such as Credit
                         Cards, Debit Cards, 50+
                         NetBanking options, UPI, EMI, BNPL, Cardless EMI and Wallets.</p>
                 </div>
                 <div class=" p-6 flex items-center justify-center">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/icon/payment_modes.png"
-                        alt="">
+                    <img src="assets/img/wide.jpg" alt="">
                 </div>
             </div>
 
@@ -380,20 +551,20 @@
     <div class="px-4 sm:px-6 lg:px-24 xl:px-40 pt-22 pb-8">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-white rounded-lg shadow-md mb-10">
             <div class=" p-6 flex items-center justify-center">
-                <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/seamless_integration.png"
-                    alt="">
+                <img src="assets/img/payment.jpg" alt="">
             </div>
             <div class=" p-6 flex flex-col">
                 <div class=" flex items-center mb-5">
-                    <span class="text-3xl font-semibold">Payment gateway integration is simple and easy</span>
+                    <span class="text-3xl md:text-3xl font-semibold">Payment gateway integration is simple and
+                        easy</span>
                 </div>
-                <p class="text-slate-800">Easebuzz payment gateway comes with simple SDKs and APIs along with detailed
+                <p class="text-slate-800">SailsPay payment gateway comes with simple SDKs and APIs along with detailed
                     API documentation</p>
             </div>
 
         </div>
         <p class="text-center text-3xl font-semibold ">
-            Easily Manage Discount Couponsbr
+            Easily Manage Discount Coupons
             <br>
             & Cashback Offers
         </p>
@@ -401,10 +572,15 @@
             <div class="flex flex-col md:flex-row gap-10 items-center">
 
                 <!-- Image -->
-                <div class="flex-shrink-0">
-                    <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/offer.gif"
-                        alt="Offer Banner" class="w-full max-w-xs md:max-w-sm rounded-lg shadow-md" />
+                <div class="w-full md:w-1/2 px-4 flex-shrink-0">
+                    <div class="relative w-full pt-[56.25%] rounded-lg overflow-hidden shadow-lg">
+                        <video src="assets/v.mp4" autoplay muted loop playsinline
+                            class="absolute top-0 left-0 w-full h-full object-cover rounded-lg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
+
 
                 <!-- Text Content -->
                 <div class="flex flex-col gap-8">
@@ -415,7 +591,7 @@
                             Brand Coupons
                         </p>
                         <p class="text-gray-700 text-base leading-relaxed">
-                            Offer 10,000+ category-based brand coupons through Easebuzz payment gateway to boost
+                            Offer 10,000+ category-based brand coupons through Sailspay payment gateway to boost
                             customer retention and manage coupon activation and real-time redemption tracking.
                         </p>
                     </div>
@@ -440,16 +616,21 @@
     <!--  virtual acc-->
     <div class="w-full bg-[#012138] text-white py-12 px-4 sm:px-6 lg:px-16">
         <div class="flex justify-center items-center mb-10">
-            <p class="text-center font-semibold text-4xl">Create and manage unlimited virtual accounts <br>
+            <p class="text-center font-semibold text-3xl">Create and manage unlimited virtual accounts <br>
                 for instant payments with InstaCollect</p>
         </div>
         <div class="flex flex-col-reverse md:flex-row  gap-10">
 
             <!-- Left Side: Image -->
-            <div class="w-full md:w-1/2">
-                <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/offer.gif" alt="Feature Image"
-                    class="w-full rounded-lg shadow-lg" />
+            <div class="w-full md:w-1/2 px-4">
+                <div class="relative w-full pt-[56.25%] rounded-lg overflow-hidden shadow-lg">
+                    <video src="assets/v.mp4" autoplay muted loop playsinline
+                        class="absolute top-0 left-0 w-full h-full object-cover rounded-lg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
+
 
             <!-- Right Side: Content -->
             <div class="w-full md:w-1/2">
@@ -483,8 +664,8 @@
 
                     <!-- Image -->
                     <div class="flex-shrink-0">
-                        <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/standee.png"
-                            alt="Offer Banner" class="w-full max-w-xs md:max-w-sm rounded-lg shadow-md" />
+                        <img src="assets/img/accept.jpg" alt="Offer Banner"
+                            class="w-full max-w-xs md:max-w-sm rounded-lg shadow-md" />
                     </div>
 
                     <!-- Text Content -->
@@ -503,7 +684,7 @@
                         <!-- Discount Coupons -->
                         <div>
                             <p class="text-xl font-semibold text-blue-900 mb-2">
-                                Easebuzz ePOS
+                                SailsPay EPOS
                             </p>
                             <p class="text-gray-700 text-base leading-relaxed">
                                 Mobile app helps you to accept payments via links and easily track transaction status
@@ -520,7 +701,7 @@
     <!-- testimonnial -->
     <div class="w-full bg-white py-16 px-4 sm:px-6 lg:px-20">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+            <h2 class="text-3xl sm:xl font-bold text-center text-gray-900 mb-12">
                 What Our Clients Say
             </h2>
 
@@ -531,7 +712,7 @@
                     <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client"
                         class="w-20 h-20 rounded-full mb-4">
                     <p class="text-gray-700 text-sm mb-4  line-clamp-4">
-                        “We are very happy with Easebuzz service and find it easy-to-use not only from a business
+                        “We are very happy with Sailspay service and find it easy-to-use not only from a business
                         perspective but also from a developers point of view. We look forward to taking this partnership
                         further.”
                     </p>
@@ -544,8 +725,8 @@
                     <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Client"
                         class="w-20 h-20 rounded-full mb-4">
                     <p class="text-gray-700 text-sm mb-4 line-clamp-4">
-                        “The development team at bigbasket found Easebuzz payment solutions easy to use. The service
-                        quality is awesome and helped us save on the cost of operations. Easebuzz brings value in terms
+                        “The development team at bigbasket found Sailspay payment solutions easy to use. The service
+                        quality is awesome and helped us save on the cost of operations. Sailspay brings value in terms
                         of customer satisfaction with its high success rates in processing payments and also offered
                         seamless integrated APIs.”
                     </p>
@@ -560,7 +741,7 @@
                     <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client"
                         class="w-20 h-20 rounded-full mb-4">
                     <p class="text-gray-700 text-sm mb-4  line-clamp-4">
-                        “We have seen immense improvement in our fees collection process with Easebuzz as they have
+                        “We have seen immense improvement in our fees collection process with Sailspay as they have
                         automated and digitized reconciliation for us. Even for parents, it has become a secure, faster
                         and easier way to pay the fees. Typical challenges like fee refunds, defaults, and splitting
                         fees between departments as per batches or courses are solved easily with the solution provided
@@ -580,7 +761,7 @@
     <div class="w-full bg-blue-100">
         <div class="px-4  pt-24 pb-16 sm:px-6 lg:px-24 xl:px-40 flex flex-col">
             <div class="w-full">
-                <p class="text-5xl font-semibold mb-8">Superecharge your business
+                <p class="text-3xl font-semibold mb-8">Superecharge your business
                     <br>
                     With Salespay
                 </p>
@@ -603,14 +784,14 @@
                     <a href="#">
                         <img src="assets/img/logo/logo.png" alt="Logo" class="h-20 mb-4" />
                     </a>
-                    <p class="text-gray-400">
-                        Easebuzz provides seamless, secure & scalable payment solutions for businesses of all sizes.
+                    <p class="text-gray-400 ">
+                        Sailspay provides seamless, secure & scalable payment solutions for businesses of all sizes.
                         Trusted by thousands of Indian businesses.
                     </p>
                     <!-- Social icons -->
                     <div class="flex space-x-4 mt-4">
                         <a href="#" class=" transition">
-                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 fill-current text-[#1e9bf0]" viewBox="0 0 24 24">
                                 <path
                                     d="M22.46 6c-.77.35-1.6.58-2.47.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.29 3.9A12.15 12.15 0 0 1 3.16 4.87a4.28 4.28 0 0 0 1.33 5.71 4.24 4.24 0 0 1-1.94-.54v.05a4.29 4.29 0 0 0 3.44 4.2 4.28 4.28 0 0 1-1.93.07 4.29 4.29 0 0 0 4 2.98A8.6 8.6 0 0 1 2 19.54 12.13 12.13 0 0 0 8.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.4 8.4 0 0 0 22.46 6z" />
                             </svg>
@@ -622,9 +803,18 @@
                             </svg>
                         </a>
                         <a href="#" class=" transition">
-                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                                <path
-                                    d="M22.23 0H1.77A1.77 1.77 0 0 0 0 1.77v20.46A1.77 1.77 0 0 0 1.77 24h20.46A1.77 1.77 0 0 0 24 22.23V1.77A1.77 1.77 0 0 0 22.23 0zM7.09 20.45H3.55V9h3.54zm-1.77-13a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm15.13 13h-3.54v-5.6c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.7h-3.54V9h3.4v1.56h.05a3.72 3.72 0 0 1 3.35-1.84c3.58 0 4.24 2.35 4.24 5.4z" />
+                            <svg class="w-5 h-5" style="color: #0077B5;" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill-current"
+                                    d="M22.23 0H1.77A1.77 1.77 0 0 0 0 1.77v20.46A1.77 1.77 0 0 0 1.77 24h20.46A1.77 1.77 0 0 0 24 22.23V1.77A1.77 1.77 0 0 0 22.23 0zM7.09 20.45H3.55V9h3.54v11.45zM5.32 7.44a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM20.45 20.45h-3.54v-5.6c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.7h-3.54V9h3.4v1.56h.05a3.72 3.72 0 0 1 3.35-1.84c3.58 0 4.24 2.35 4.24 5.4v6.33z" />
+                            </svg>
+
+                        </a>
+                        <a href="#" class=" transition">
+                            <svg class="w-5 h-5" style="color: #E1306C;" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill-current"
+                                    d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-1.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0z" />
                             </svg>
                         </a>
                     </div>
@@ -633,27 +823,34 @@
                 <!-- Links Grid -->
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
                     <div>
+                        <h4 class="font-semibold mb-2">Products</h4>
+                        <ul class="space-y-1 text-sm text-[#012139]">
+                            <li><a href="#" class="hover:text-[#1290bd]">Payment Gateway</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">Payment Link</a></li>
+                        </ul>
+                        <h4 class="font-semibold mb-2"> Pricing</h4>
+                        <h4 class="font-semibold mb-2"> Support</h4>
+                    </div>
+                    <div>
                         <h4 class="font-semibold mb-2">Company</h4>
                         <ul class="space-y-1 text-sm text-[#012139]">
                             <li><a href="#" class="hover:text-[#1290bd]">About Us</a></li>
-                            <li><a href="#" class="hover:text-[#1290bd]">Careers</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">Terms & Conditions</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">Grievance Policy</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">Merchant Policy</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]"> Contact US</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">Bug Bounty</a></li>
                             <li><a href="#" class="hover:text-[#1290bd]">Blog</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 class="font-semibold mb-2">Solutions</h4>
+                        <h4 class="font-semibold mb-2">Developers</h4>
                         <ul class="space-y-1 text-sm text-[#012139]">
-                            <li><a href="#" class="hover:text-[#1290bd]">Payment Gateway</a></li>
-                            <li><a href="#" class="hover:text-[#1290bd]">Smart Collect</a></li>
-                            <li><a href="#" class="hover:text-[#1290bd]">Subscriptions</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold mb-2">Support</h4>
-                        <ul class="space-y-1 text-sm text-[#012139]">
-                            <li><a href="#" class="hover:text-[#1290bd]">Contact</a></li>
-                            <li><a href="#" class="hover:text-[#1290bd]">Help Center</a></li>
-                            <li><a href="#" class="hover:text-[#1290bd]">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">Getting Started</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">Integration Docs</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">API Referrence</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">FaQ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -666,82 +863,7 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const carousel = document.querySelector('[data-carousel]');
-            const container = carousel.querySelector('[data-carousel-container]');
-            const items = carousel.querySelectorAll('[data-carousel-item]');
-            const prevBtn = carousel.querySelector('[data-carousel-prev]');
-            const nextBtn = carousel.querySelector('[data-carousel-next]');
-            const indicators = carousel.querySelectorAll('[data-carousel-indicators] button');
-            
-            let currentIndex = 0;
-            const itemCount = items.length;
-            
-            // Initialize carousel
-            function updateCarousel() {
-                container.style.transform = `translateX(-${currentIndex * 100}%)`;
-                
-                // Update indicators
-                indicators.forEach((indicator, index) => {
-                    if (index === currentIndex) {
-                        indicator.setAttribute('aria-current', 'true');
-                        indicator.classList.add('bg-[#517ce3]/70');
-                        indicator.classList.remove('bg-[#517ce3]/30');
-                    } else {
-                        indicator.removeAttribute('aria-current');
-                        indicator.classList.remove('bg-[#517ce3]/70');
-                        indicator.classList.add('bg-[#517ce3]/30');
-                    }
-                });
-            }
-            
-            // Next slide
-            function nextSlide() {
-                currentIndex = (currentIndex + 1) % itemCount;
-                updateCarousel();
-            }
-            
-            // Previous slide
-            function prevSlide() {
-                currentIndex = (currentIndex - 1 + itemCount) % itemCount;
-                updateCarousel();
-            }
-            
-            // Auto-rotate (optional)
-            let interval = setInterval(nextSlide, 5000);
-            
-            // Pause on hover
-            carousel.addEventListener('mouseenter', () => clearInterval(interval));
-            carousel.addEventListener('mouseleave', () => interval = setInterval(nextSlide, 5000));
-            
-            // Button events
-            nextBtn.addEventListener('click', () => {
-                clearInterval(interval);
-                nextSlide();
-                interval = setInterval(nextSlide, 5000);
-            });
-            
-            prevBtn.addEventListener('click', () => {
-                clearInterval(interval);
-                prevSlide();
-                interval = setInterval(nextSlide, 5000);
-            });
-            
-            // Indicator events
-            indicators.forEach((indicator, index) => {
-                indicator.addEventListener('click', () => {
-                    clearInterval(interval);
-                    currentIndex = index;
-                    updateCarousel();
-                    interval = setInterval(nextSlide, 5000);
-                });
-            });
-            
-            // Initialize
-            updateCarousel();
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
