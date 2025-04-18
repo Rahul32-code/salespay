@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SailsPay-Login</title>
+
+    <link rel="icon" type="image/png" href="assets/img/logo/logo.png">
+
+    <!-- ✅ External Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itswadesh/netflix-scroll/netflix-scroll.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .wave {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+            left: 0%;
+            top: 0%;
+            /* transform: translate(-50%, -50%); */
+            background: linear-gradient(744deg, #af40ff, #5b42f3 60%, #00ddeb);
+            border-radius: 40%;
+            animation: wave 55s infinite linear;
+            z-index: -1;
+        }
+
+        .wave:nth-child(2) {
+            animation-duration: 45s;
+            opacity: 0.4;
+        }
+
+        .wave:nth-child(3) {
+            animation-duration: 35s;
+            opacity: 0.3;
+        }
+
+        @keyframes wave {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black relative overflow-hidden">
+    <!-- 🔮 Animated Waves in Background (Only Once!) -->
+    <div class="wave-container absolute inset-0 -z-10">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <!-- Top Navbar -->
+    <div class="sticky top-0 z-50 bg-white/10 backdrop-blur-lg border-b border-white/30 shadow-md">
+        <div class="flex justify-start items-center py-4 px-4 sm:px-6 lg:px-24 xl:px-40">
+            <div class="flex-shrink-0">
+                <a href="#" class="inline-block">
+                    <img src="assets/img/logo/logo.png" alt="Logo" class="w-24 sm:w-28 lg:w-32 object-contain">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Form Section -->
+    <div class="flex justify-center items-center min-h-[80vh] px-4">
+        <div class="bg-black/10 backdrop-blur-lg border border-white/30 shadow-xl rounded-lg p-8 w-full max-w-md">
+            <h2 class="text-2xl font-bold mb-6 text-start text-[#01213a]">Sign into Your Account</h2>
+            <form action="#" method="POST" class="space-y-5">
+                <div>
+                    <label class="block text-sm font-medium mb-1" for="email">Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-4 py-2 border border-slate-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#158dba]">
+                </div>
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <label class="block text-sm font-medium mb-1" for="Password">Password</label>
+                        <a href="#" class="text-[#158dba] hover:text-slate-800">Forget Your Password?</a>
+                    </div>
+                    <input type="Password" id="Password" name="Password" required
+                        class="w-full px-4 py-2 border border-slate-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#158dba]">
+                </div>
+                <div>
+                    <button type="submit"
+                        class="w-full bg-[#01213a] hover:bg-[#158dba] text-white font-medium py-2 px-4 rounded-lg transition duration-200">
+                        Sign In
+                    </button>
+                </div>
+            </form>
+            <p class="text-sm text-center mt-4">Don't Have an Account?
+                <a href="#" class="text-[#158dba] hover:text-slate-800">Login</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+
+</html>
