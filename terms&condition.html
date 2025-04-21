@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SailsPay</title>
+
+    <link rel="icon" type="image/png" href="assets/img/logo/logo.png">
+
+    <!-- ✅ External Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itswadesh/netflix-scroll/netflix-scroll.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white text-black">
+    <!-- Top Announcement Bar -->
+    <div class="bg-[#02233e] w-full z-40">
+        <div
+            class="container mx-auto flex flex-row lg:flex-row justify-center items-center px-4 py-2 gap-2 md:gap-4 lg:gap-6">
+            <div class="flex flex-wrap gap-1.5 justify-center items-center text-center lg:text-left">
+                <p class="text-white font-semibold  text-[.7rem] sm:text-sm md:text-base lg:text-lg">Welcome to
+                    <span class="text-[#1a91bb]">SailsPay</span> Payment Aggregator
+                </p>
+                <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/approval-logo.svg" alt=""
+                    class="w-4 md:w-5 h-auto">
+            </div>
+            <div class="hidden md:flex flex-wrap justify-center items-center">
+                <button
+                    class="border-1 border-[#fff] text-[#fff] rounded-md px-4 py-1 cursor-pointer hover:border-[#1a91bb] hover:text-[#1a91bb]">Know
+                    More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- lower -->
+    <div class="w-full sticky top-0 z-50 backdrop-blur-[50px] ">
+        <div class="flex justify-between items-center py-4 px-4 sm:px-6 lg:px-24 xl:px-40">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="index.html" class="inline-block">
+                    <img src="assets/img/logo/logo.png" alt=" Logo" class="w-24 sm:w-28 lg:w-32 object-contain">
+                </a>
+            </div>
+
+            <!-- Nav Menu -->
+            <div class="hidden md:inline-block">
+                <div class="flex items-center justify-center">
+                    <ul class="flex items-center gap-6">
+
+                        <!-- Products with Dropdown -->
+                        <li class="relative group">
+                            <span
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out cursor-pointer">
+                                Products
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </span>
+
+                            <!-- Dropdown Menu -->
+                            <ul
+                                class="absolute left-0 mt-4 w-48 bg-white border border-[#108fba67] shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <li>
+                                    <a href="payment-gateway.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f9ff] hover:text-[#108fba] transition">
+                                        Payment Gateway
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="payment-link.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f9ff] hover:text-[#108fba] transition">
+                                        Payment Link
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Other Nav Links -->
+                        <li>
+                            <a href="pricing.html"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Pricing
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Developers
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact-us.html"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Support
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        <!-- <li>
+                            <a href="#"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Resources
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li> -->
+
+                        <li>
+                            <a href="blog.html"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Blog
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Buttons -->
+            <div class="flex items-center gap-3">
+                <button
+                    class="hidden sm:inline-block border border-[#1a91bb] text-[#1a91bb] rounded-md px-4 py-1 font-semibold hover:bg-[#6d44e5] hover:border-[#6d44e5] hover:text-[#85E6C4] transition-all duration-300 cursor-pointer">
+                    <a href="login.html">Login</a>
+                </button>
+
+
+                <button
+                    class="hidden sm:inline-block bg-[#517ce3] text-white border border-[#517ce3] rounded-md px-4 py-1 font-semibold hover:bg-[#6d44e5] hover:border-[#6d44e5] hover:text-[#85E6C4] transition-all duration-300 cursor-pointer">
+                    <a href="signup.html">Sign Up</a>
+                </button>
+                <button class="  bg-slate-200 px-4 py-1 rounded-md hover:bg-slate-300 cursor-pointer md:hidden"
+                    id="openSidebarBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div id="sidebarOverlay" class="w-full h-full fixed inset-0 bg-[rgba(33,37,41,0.94)] z-50 hidden">
+        <!-- Close Button -->
+        <button id="closeSidebarBtn"
+            class="absolute top-5 right-5 text-4xl text-white hover:text-slate-300 cursor-pointer">
+            &times;
+        </button>
+
+        <div class="px-5 pt-20 pb-10 h-full">
+            <div class="bg-white shadow-lg flex flex-col rounded-md h-full">
+
+                <!-- Top Logo -->
+                <div class="flex items-center justify-center h-20 border-b shrink-0">
+                    <img src="assets/img/logo/logo.png" alt="Logo" class="h-10" />
+                </div>
+
+                <!-- Scrollable Menu -->
+                <div class="flex-1 overflow-y-auto px-6 py-6 bg-white">
+                    <ul class="space-y-2">
+
+                        <!-- Products Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('products-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Products
+                                    <i id="arrow-icon-products-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="products-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="payment-gateway.html" class="block px-2 py-2 hover:text-blue-600">Payment
+                                        Gateway</a></li>
+                                <li><a href="payment-link.html" class="block px-2 py-2 hover:text-blue-600">Payment
+                                        Link</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Developers Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('developers-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Developers
+                                    <i id="arrow-icon-developers-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="developers-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Getting Started</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Integration Docs</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">API Reference</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">FAQs</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Static Links -->
+                        <li class="border-b border-b-gray-700">
+                            <a href="pricing.html"
+                                class="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">Pricing</a>
+                        </li>
+                        <li class="border-b border-b-gray-700">
+                            <a href="contact-us.html"
+                                class="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">Support</a>
+                        </li>
+
+                        <!-- Resources Dropdown -->
+                        <!-- <!-- <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('resources-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Resources
+                                    <i id="arrow-icon-resources-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="resources-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Plugins</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Merchant Account</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">UPI</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">PG Integration</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Tokenization</a></li>
+                            </ul>
+                        </li> --> -->
+
+                        <li class="border-b border-b-gray-700">
+                            <a href="blog.html"
+                                class="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">Blog</a>
+                        </li>
+
+                        <!-- Company Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('company-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Company
+                                    <i id="arrow-icon-company-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="company-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="about-us.html" class="block px-2 py-2 hover:text-blue-600">About Us</a>
+                                </li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Terms & Conditions</a></li>
+                                <li><a href="privacy-policies.html" class="block px-2 py-2 hover:text-blue-600">Privacy
+                                        Policy</a></li>
+                                <li><a href="contact-us.html" class="block px-2 py-2 hover:text-blue-600">Contact Us</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="w-full bg-white text-[#02233e]">
+        <div class="px-4 sm:px-6 lg:px-24 xl:px-40 py-12 space-y-8">
+            <h1 class="text-3xl font-bold">Terms & Conditions</h1>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Introduction and Terms of Use</h2>
+                <p>The terms and conditions contained hereinafter ("TERMS OF USE") shall apply to the use of the website
+                    www.sailspay.com and any other linked pages, products, software(s), API keys, features, content or
+                    application services (including but without limitation to any mobile application services) in
+                    connection therewith, offered from time to time by Sailspay Software Private Limited ("SAILSPAY" or
+                    "WE" or "OUR" or "US") (collectively, "WEBSITE").</p>
+
+                <p>Any person logging on to or using the Website (even when such person does not avail of any services
+                    provided in the Website ("SERVICES")) (hereinafter referred to as a "USER", "SELLER", "YOU" or
+                    "CLIENT") shall be presumed to have read these Terms of Use (which includes the Privacy Policy,
+                    separately put up on the Website) and unconditionally and irrevocably accepted the terms and
+                    conditions set out herein (these Terms of Use). These Terms of Use, together with the rest of the
+                    Policies (defined below), constitute a binding and enforceable agreement between the User and
+                    Sailspay.</p>
+
+                <p>The user understands and unconditionally acknowledges that even though the user may be allowed to
+                    execute transactions on the platform of Sailspay, the funds shall not be settled to the account of
+                    such user pending completion of KYC obligations on the part of the user in accordance with the RBI's
+                    KYC guidelines (defined below). Furthermore, upon non-completion of KYC obligations on the part of
+                    the user, as mentioned above, to the satisfaction of Sailspay, we reserve the right to not release
+                    the settlement amounts to the user and may eventually reverse the funds to the account from where
+                    such payment originated.</p>
+
+                <p>Please read the terms set out hereunder carefully before agreeing to the same. If you do not agree to
+                    these Terms of Use (including any referenced policies or guidelines), please immediately terminate
+                    your use of the Website. You can accept the Terms of Use by:</p>
+
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Clicking to accept or agree to the Terms of Use, where this option is made available to you by
+                        Sailspay in the User interface for any particular Service; or</li>
+                    <li>Accessing, testing or actually using the Services. In this case, you understand and agree that
+                        Sailspay will treat your use of the Services as acceptance of the Terms of Use from that point
+                        onwards.</li>
+                </ul>
+
+                <p>For the purpose of these Terms of Use, wherever the context so requires, the term "User" shall mean
+                    and include any natural or legal person who has agreed to these Terms of Use on behalf of itself or
+                    any other legal entity.</p>
+
+                <p>Illegality or unenforceability of one or more provisions of these Terms of Use shall not affect the
+                    legality and enforceability of the other terms of the Terms of Use. For avoidance of doubt, if any
+                    of the provisions becomes void or unenforceable, the rest of the provisions of these Terms of Use
+                    shall be binding upon the User.</p>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Provision of the Services being offered by Sailspay</h2>
+                <p>Subject to these Terms of Use, Merchant Onboarding Policy, KYC Policy, Disputes and Grievance
+                    Redressal Policy and Privacy Policy (collectively, "POLICIES"), Sailspay offers the Services set
+                    forth in Payment Gateway Services to the Users herein.</p>
+
+                <p>Sailspay is constantly evolving in order to provide the best possible experience and information to
+                    its Users. You acknowledge and agree that the form and nature of the Services which Sailspay
+                    provides may change from time to time without any prior notice to you. As part of this continuing
+                    process, you acknowledge and agree that Sailspay may stop (permanently or temporarily) providing the
+                    Services (or any features within the Services) to you or to Users generally at Sailspay's sole
+                    discretion, without any prior notice.</p>
+
+                <p>Sailspay reserves the right to delete your User information stored in your account including but not
+                    limited to all or any personal information or any sensitive personal data or information ("SPDI")
+                    stored in your User account. Alternatively, a User may notify us if they do not wish that we retain
+                    or use the personal information or SPDI by contacting the Grievance cum Nodal Officer (as provided
+                    below). However, in such a case, we may not be able to provide you some or all of our Services.</p>
+
+                <p>Sailspay acknowledges and represents that it is and shall remain Payment Card Industry Data Security
+                    Standard ("PCI DSS") certified. Further, Sailspay shall maintain compliance with PCI DSS Standard or
+                    other comparable industry standards governing physical/logical security cardholder data across
+                    Sailspay environment.</p>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Use of the Services by User</h2>
+                <p>In order to access certain Services, you may be required to open a User account with Sailspay by
+                    providing information about yourself (such as identification or contact details) as part of the
+                    registration process ("REGISTRATION DATA") for the Services, or as part of your continued use of the
+                    Services. You agree that any Registration Data you give to Sailspay will always be accurate,
+                    correct, complete and up to date.</p>
+
+                <p>You are solely responsible for maintaining the confidentiality of your account and password and for
+                    any activity that occurs in or through your account. We will not be liable to any person for any
+                    loss or damage which may arise as a result of any failure on your part to protect your login ID or
+                    password or any other credential pertaining to your account.</p>
+
+                <p>You understand and undertake that you shall be solely responsible for your Registration Data and User
+                    content and undertake to, neither by yourself nor by permitting any third party to host, display,
+                    upload, modify, publish, transmit, update or share any information that:</p>
+
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Belongs to another person and to which you do not have any right to;</li>
+                    <li>Is grossly harmful, harassing, blasphemous, defamatory, obscene, pornographic, pedophilic,
+                        seditious, libelous, invasive of another's privacy, hateful, or racially, ethnically
+                        objectionable, disparaging, relating or encouraging money laundering or gambling, or otherwise
+                        unlawful in any manner whatsoever;</li>
+                    <li>Harms minors in any way;</li>
+                    <li>Infringes any patent, trademark, copyright or other proprietary rights of any person or entity
+                        anywhere in the world;</li>
+                    <li>Violates any law for the time being in force;</li>
+                    <li>Deceives or misleads the addressee about the origin of such messages or communicates any
+                        information which is grossly offensive or menacing in nature;</li>
+                    <li>Impersonates another person;</li>
+                    <li>Contains software viruses or any other computer code, files or programs designed to interrupt,
+                        destroy or limit the functionality of any computer resource;</li>
+                    <li>Threatens the unity, integrity, defense, security or sovereignty of India, friendly relations
+                        with foreign states, or public order or causes incitement to the commission of any cognizable
+                        offence or prevents investigation of any offence or is insulting to any other nation; or</li>
+                    <li>Is illegal in any other way.</li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Eligibility</h2>
+                <p>Any person who is above eighteen (18) years of age and competent to contract under the applicable
+                    laws is eligible to access or visit the Website or avail the Services displayed therein. Your use or
+                    access of the Website shall be treated as your representation that you are competent to contract and
+                    if you are registering as a business entity, then you represent and warrant that you have the
+                    authority to bind such business entity to the Terms of Use.</p>
+
+                <p>The User represents and warrants that it will be financially responsible for all of User's usage
+                    (including the purchase of any Service) and access of the Website. The User shall also be
+                    responsible for use of User's account by others. The Terms of Use shall be void where prohibited by
+                    applicable laws, and the right to access the Website shall automatically stand revoked in such
+                    cases.</p>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Content in the Services</h2>
+                <p>For the purposes of these Terms of Use, the term "CONTENT" includes, without limitation, information,
+                    data, text, logos, photographs, videos, audio clips, animations, written posts, articles, comments,
+                    software, scripts, graphics, themes and interactive features generated, provided or otherwise made
+                    accessible on or through the Services.</p>
+
+                <p>Sailspay reserves the right to moderate, publish, re-publish, and use all User generated
+                    contributions and comments (including but not limited to reviews, profile pictures, comments, likes,
+                    favorites, votes) posted on the Website as it deems appropriate (whether in whole or in part) for
+                    its product(s), whether owned or affiliated. Sailspay is not liable to pay royalty to any User for
+                    re-publishing any content across any of its platforms.</p>
+
+                <p>If you submit any material on the Website, you agree thereby to grant Sailspay the right to use,
+                    moderate, publish any such work worldwide for any of its product(s), whether owned or affiliated.
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Proprietary Rights</h2>
+                <p>You acknowledge and agree that Sailspay (or Sailspay's licensors) owns all legal and proprietary
+                    right, title and interest in and to the Services, including any intellectual property rights which
+                    subsist in the Services (whether those rights happen to be registered or not, and wherever in the
+                    world those rights may exist).</p>
+
+                <p>Unless you have agreed otherwise in writing with Sailspay, nothing in the Terms of Use gives you a
+                    right to use any of Sailspay's tradenames, trademarks, service marks, logos, domain names, and other
+                    distinctive brand features.</p>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Compliance with Anti-Bribery and Anti-Corruption Laws</h2>
+                <p>User agrees and unconditionally undertakes to comply with all applicable commercial and public
+                    anti-bribery and anti-corruption laws (including but not limited to the provisions of, Prevention of
+                    Corruption Act, 1988, Prevention of Money Laundering Act, 2002, Foreign Contribution (Regulation)
+                    Act, 2010, and any amendments thereto).</p>
+
+                <p>The User also unconditionally agrees and undertakes that it is compliant with and shall do/undertake
+                    all acts necessary to continue to be compliant with the provisions of 'The Know Your Customer (KYC)
+                    / Anti-Money Laundering (AML) / Combating Financing of Terrorism (CFT) guidelines issued by the
+                    Department of Regulation', RBI, as amended from time to time.</p>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Exclusion of Warranties</h2>
+                <p>Sailspay disclaims any implied warranty for Services and any use thereof. You expressly understand
+                    and agree that your use of the Services is at your sole risk and that the Services are provided on
+                    an "as is" and "as available" basis.</p>
+
+                <p>In particular, Sailspay, its subsidiaries and affiliates, and its licensors do not represent or
+                    warrant to you that:</p>
+
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>The information or Content provided on the Website are accurate, complete and updated;</li>
+                    <li>Your use of the Services will meet your requirements;</li>
+                    <li>Your use of the Services will be uninterrupted, timely, secure or free from error;</li>
+                    <li>Any information obtained by you as a result of your use of the Services will be accurate or
+                        reliable; and</li>
+                    <li>That defects in the operation or functionality of any software provided to you as part of the
+                        Services will be corrected.</li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Representations and Warranties of User/Seller</h2>
+                <p>The User/Seller hereby represents and warrants:</p>
+
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>That User/Seller, in case of a natural person, is at least 18 years old with a conscious mind
+                        fit and proper to enter into this agreement (the "Policies"), is a resident of India with valid
+                        credentials and is an entity who is legally eligible to carry out or operate a business in
+                        India;</li>
+                    <li>That all the information and documents pertaining to his/her identity and address proof, as
+                        submitted for the purpose of know your client (KYC) verification with Sailspay are true and
+                        genuine and are not fabricated or doctored in any way whatsoever;</li>
+                    <li>That the User shall ensure that its IT systems and infrastructure are compliant with the
+                        mandates of PCI-DSS and Payment Application-Data Security Standard, as applicable to it;</li>
+                    <li>That the User/Seller shall not store any customer card and such related data in any form or
+                        manner whatsoever on their websites/servers;</li>
+                    <li>That it shall be the exclusive responsibility of the User to ensure that the correct line of
+                        business of the User is declared under merchant category code (MCC) pertaining to the User and
+                        that Sailspay reserves the right to withhold settlements and/ or suspend transactions of the
+                        User in case of any mismatch or violation in its MCC declaration; and</li>
+                    <li>That the User/Seller shall accord adequate and timely cooperation in allowing Sailspay or its
+                        appointed agencies or regulators to conduct audits, including for compliance with the Policies
+                        and provisions of applicable laws.</li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Indemnity</h2>
+                <p>The User shall indemnify and hold Sailspay, its subsidiaries, affiliates, promoters, directors,
+                    employees, contractors, licensors and agents and any other related or third parties involved with
+                    Sailspay in any manner whatsoever, harmless from and against all losses arising from claims,
+                    demands, actions or other proceedings as a result of:</p>
+
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Fraud, negligence and willful misconduct by the User in the use of the Services;</li>
+                    <li>Violation of applicable laws in the use of the Services and/or in the conduct of the business of
+                        the User, including but not limited to the legal provisions mentioned under these Terms of Use;
+                    </li>
+                    <li>Breach of the User's confidentiality obligations under these Terms of Use;</li>
+                    <li>Disputes raised by a User's customer in relation to a transaction where such dispute is not
+                        attributable to the Services;</li>
+                    <li>Penalties, fines, charges, or any other actions as a result of breach or violation of any the
+                        User's representations and warranties; and</li>
+                    <li>Fines, penalties and charges imposed by the Acquiring Bank, Card Payment Networks or any
+                        governmental/regulatory/statutory Authority on account of transactions on the User's website or
+                        platform that are in violation of applicable law.</li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Limitation of Liability</h2>
+                <p>Subject to the overall provisions stated above, you expressly understand and agree that Sailspay, its
+                    subsidiaries, affiliates, promoters, directors, employees, agents and licensors shall not be liable
+                    to you for:</p>
+
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Any direct, indirect, incidental, special, consequential, punitive or exemplary damages which
+                        may be incurred by you, however caused and under any theory of liability. This shall include,
+                        but not be limited to, any loss of profit (whether incurred directly or indirectly), any loss of
+                        goodwill or business reputation, any loss of data suffered, cost of procurement of substitute
+                        goods or Services, or other intangible loss;</li>
+                    <li>Any loss or damage which may be incurred by you, including but not limited to loss or damage as
+                        a result of any reliance placed by you on the completeness, accuracy or existence of any
+                        advertising, or as a result of any relationship or transaction between you and any advertiser or
+                        sponsor whose advertisement appears on the Services;</li>
+                    <li>The deletion of, corruption of, or failure to store, any content and other communications data
+                        maintained or transmitted by or through your use of the Services;</li>
+                    <li>Your failure to provide Sailspay with accurate Registration Data; or</li>
+                    <li>Your failure to keep your password or account details secure and confidential.</li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Force Majeure</h2>
+                <p>Sailspay shall not be in breach of its obligation hereunder if it is delayed in the performance of,
+                    or is unable to perform (whether partially or fully) its obligations (provide the Services) as a
+                    result of the occurrence of a Force Majeure Event (defined below).</p>
+
+                <p>Force Majeure Event means any event, whatever be the origin, not within the reasonable control of
+                    Sailspay, which Sailspay is unable to prevent, avoid or remove or circumvent by the use of
+                    reasonable diligence. Force Majeure event shall include, but shall not be limited to, acts of god,
+                    acts, orders, lockdowns, directions of governmental/ regulatory/ judicial/ quasi-judicial/ law
+                    enforcement authorities/ agencies which hinders Sailspay from performing its obligations under any
+                    agreement, including these Terms of Use, with you, war, hostilities, invasion, armed conflict, act
+                    of foreign enemy, embargoes, riot, insurrection, labour stoppages, outages and downtimes systems
+                    failures experienced by a facility provider, revolution or usurped power, acts of terrorism,
+                    sabotage, nuclear explosion, earthquake, pandemic, epidemic, hacking or man in the middle attack or
+                    similar attacks/ intrusions, fires, typhoons, storms and other natural catastrophes.</p>
+            </div>
+
+            <<div class="space-y-6">
+                <h2 class="text-2xl font-semibold">Confidentiality</h2>
+                <p>The User may receive or have access to certain confidential and proprietary information, including
+                    without limitation, information belonging and/or relating to Sailspay and its affiliates, marketing
+                    prospects, contractors, officers, directors or shareholders, personal data of customers of the User,
+                    financial and operational information, billing records, business model and reports, computer systems
+                    and modules, secure websites, reporting systems, marketing strategies, operational plans,
+                    proprietary systems and procedures, trade secrets and other similar proprietary information,
+                    including technical "know-how", methods of operation, business methodologies, software, software and
+                    technology architecture, networks, any other information not generally available to the public, and
+                    any items in any form in writing or oral, clearly identified as confidential ("CONFIDENTIAL
+                    INFORMATION").</p>
+                <p>The User shall keep Confidential Information in confidence. The User shall use commercial, reasonable
+                    and necessary safety measures and steps to maintain the confidentiality and secrecy of the
+                    Confidential Information from public disclosure, and the User shall at all times maintain
+                    appropriate measures to protect the security and integrity of the Confidential Information. The User
+                    shall not, without Sailspay's prior written consent, divulge any of the Confidential Information to
+                    any third party other than the User's officers, employees, agents or representatives who have a need
+                    to know for the purposes of these Terms of Use. The User shall take all reasonable steps to ensure
+                    that all of its directors, managers, officers, employees, agents, independent contractors or other
+                    representatives comply with this paragraph 12 whenever they are in possession of Confidential
+                    Information as part of this Agreement.</p>
+                <p>The User shall use the Confidential Information solely in furtherance of and in connection with the
+                    Services contemplated under these Terms of Use. The User further agrees that the Confidential
+                    Information will not be used by him/her and his/her representatives in any way detrimental to the
+                    interests of Sailspay. The User hereby unconditionally and irrevocably agrees and undertakes to take
+                    all necessary measures to ensure that the User's website or any other computer system that is being
+                    used to effect Transactions by the usage of Services, do not store/save any customer card or any
+                    other such related data. You further undertake that you shall be responsible for ensuring complete
+                    and absolute privacy, anonymity and security of all customer data flowing through your systems
+                    during the usage of the Services by you.</p>
+                <h3 class="text-xl font-semibold">Exceptions</h3>
+                <p>The aforesaid confidentiality obligations shall impose no obligation on the User with respect to any
+                    portion of Confidential Information which:</p>
+                <ul>
+                    <li>Was at the time received or which thereafter becomes, through no act or failure on the part of
+                        the User, generally known or available to the public;</li>
+                    <li>Was at the time of receipt, known to the User as evidenced by written documentation then
+                        rightfully in the possession of the User or Sailspay;</li>
+                    <li>Was already acquired by the User from a third party who does not thereby breach an obligation of
+                        confidentiality to Sailspay and who discloses it to the User in good faith;</li>
+                    <li>Was developed by the User without use of the Sailspay's Confidential Information in such
+                        development;</li>
+                    <li>Has been disclosed pursuant to the requirements of applicable law, any governmental/regulatory
+                        authority, judicial/quasi-judicial authority provided however, that Sailspay shall have been
+                        given a reasonable opportunity to resist disclosure and/or to obtain a suitable protective
+                        order.</li>
+                </ul>
+                <p>The User shall notify Sailspay immediately upon discovery of any unauthorized use or disclosure of
+                    Confidential Information or any other breach of this paragraph 12. The User will cooperate with
+                    Sailspay in every reasonable way to help Sailspay regain possession of such Confidential Information
+                    and prevent its further unauthorized use.</p>
+                <h3 class="text-xl font-semibold">Remedies</h3>
+                <p>Parties acknowledge that irreparable damage may occur on breach of the terms and provisions set out
+                    in this paragraph 12. Accordingly, if the User breaches or threatens to breach any of the provisions
+                    set out in this paragraph 12, then Sailspay shall be entitled, without prejudice, to seek all the
+                    rights and remedies available to it under applicable law, including a temporary restraining order
+                    and an injunction restraining any breach of the provisions set out in this paragraph 12. Such
+                    remedies shall not be deemed to be exclusive but shall be in addition to all other remedies
+                    available under applicable law or in equity.</p>
+                <h2 class="text-2xl font-semibold">Fraudulent Transactions</h2>
+                <p>Subject to paragraphs 15.2 and 15.3 below, if Sailspay is intimated, by the Acquiring Bank or a Card
+                    Payment Network, that a customer has reported an unauthorized debit of the customer's payment
+                    instrument ("FRAUDULENT TRANSACTION"), then Sailspay shall be entitled to suspend the settlement of
+                    the amount associated with the Fraudulent Transaction during the pendency of inquiries,
+                    investigations and resolution thereof by the Acquiring Bank or the Card Payment Network. Subject to
+                    paragraph 15.3 below, if the Fraudulent Transaction results in a Chargeback, then the Chargeback
+                    shall be resolved in accordance with the provisions relating to Chargebacks as set out under these
+                    Terms of Use. If the amount in respect of a Fraudulent Transaction has already been settled to the
+                    User pursuant to these Terms of Use, any dispute arising in relation to the said Fraudulent
+                    Transaction, following settlement, shall be resolved in accordance with the RBI's notification
+                    RBI/DPSS/2019-20/174 DPSS.CO.PD.No.1810/02.14.008/2019-20, dated March 17, 2020,
+                    DBR.No.Leg.BC.78/09.07.005/2017-18, dated July 6, 2017 read with RBI's notification DBOD. LEG. BC
+                    86/09.07.007/2001-02 dated April 8, 2002 and other notifications, circulars and guidelines issued by
+                    the RBI in this regard from time to time.</p>
+                <h2 class="text-2xl font-semibold">Risk Monitoring; Unusual or Suspicious Transactions</h2>
+                <p>In an effort to manage our risk, we may monitor your transactions and processing activity for
+                    high-risk practices or for fraudulent transactions. We may also engage third-party service providers
+                    to assist in these efforts and other elements of the service. If we believe there is suspicious or
+                    unusual activity, we may temporarily or permanently suspend your access to the Service. Suspicious
+                    or unusual activity includes, but is not limited to changes in your average transaction amount or
+                    processing pattern or use of different payment accounts.</p>
+                <h2 class="text-2xl font-semibold">Advertising</h2>
+                <p>Some of the Services are supported by advertising revenue and may display advertisements and
+                    promotions. These advertisements may be targeted to the content of information stored on the
+                    Services, queries made through the Services or other information. The manner, mode and extent of
+                    advertising by Sailspay on the Services are subject to change without any specific notice to you. In
+                    consideration for Sailspay granting you access to and use of the Services, you agree that Sailspay may
+                    place such advertising on the Services.</p>
+                <h2 class="text-2xl font-semibold">Authorisation</h2>
+                <p>By accepting these Terms of Use, you authorise us to hold, receive, disburse and settle funds on your
+                    behalf. Your authorisation permits us to generate an electronic funds transfer between the payment
+                    system providers and the escrow account to process each payment transaction that you authorise.
+                    Thereafter, you authorise us to transfer the payments received from your buyers to the bank account
+                    designated by you for this purpose at the time of registration ("ACQUIRING BANK"). Your
+                    authorisation will remain in full force and effect until your Sailspay account is closed or
+                    terminated.</p>
+                <h2 class="text-2xl font-semibold">Card Association Rules</h2>
+                <p>"CARD PAYMENT NETWORK RULES" refer to the written rules, regulations, releases, guidelines,
+                    processes, interpretations and other requirements (whether contractual or otherwise) imposed and
+                    adopted by the Card Payment Networks. These Card Payment Networks have infrastructure and processes
+                    to enable transaction authorisation. The Card Payment Networks require you to comply with all
+                    applicable guidelines, rules, and regulations formulated by them. The Card Payment Networks reserve
+                    the right to amend their guidelines, rules and regulations. We may be required to amend, modify or
+                    change these Terms of Use pursuant to amendments to the Card Payment Network Rules and such
+                    amendments, if any, shall be deemed to be binding on the Users with immediate effect. You agree to
+                    fully comply with all programs, guidelines, requirements that may be published and/or mandated by
+                    the Card Payment Networks. Notwithstanding our assistance in understanding the Card Payment Network
+                    Rules, you expressly acknowledge and agree that you are assuming the risk of compliance with all
+                    provisions of the Card Payment Network Rules, regardless of whether you are aware of or have access
+                    to those provisions. MasterCard, Visa and American Express make excerpts of their respective rules
+                    available on their internet sites.</p>
+                <p>In the event that your non-compliance of Card Payment Network Rules, results in any fines, penalties
+                    or other amounts being levied on or demanded of us by a Card Payment Network, then without prejudice
+                    to our other rights hereunder, you shall forthwith reimburse us in an amount equal to the fines,
+                    penalties or other amount so levied or demanded or spent by us in any manner in relation to such
+                    fines, penalties and levies. If you fail to comply with your obligations towards the Card Payment
+                    Networks, Sailspay may settle such fines, penalties or other amounts from future payables or suspend
+                    settlement or suspend/terminate the Services forthwith.</p>
+                <h2 class="text-2xl font-semibold">Settlements</h2>
+                <p>In consideration of the Services rendered by us, you shall pay Sailspay a fee ("FEE"). Sailspay
+                    reserves the right to revise the Fee periodically and will intimate you of any such change within
+                    reasonable time. Sailspay reserves the right to levy additional fees on transactions undertaken
+                    through corporate cards. On receipt of the payments in the nodal account, we will endeavour to
+                    instruct the nodal bank to transmit the payments payable to the seller, after deducting our Fee or
+                    chargebacks or penalties imposed by regulatory authorities not limited to RBI, from the nodal
+                    account to the seller's designated bank account, within 3 (three) bank working days (or such other
+                    period as may be prescribed by the Reserve Bank of India from time to time) from completion of
+                    transaction. Subject to any other provisions of these Terms of Use and completion of transaction,
+                    the seller acknowledges that we will settle the payments only upon actual receipt of payments in the
+                    nodal account and upon reconciliation of the payments by the Acquiring Banks, our payment gateway
+                    and the nodal bank. The seller will bear and be responsible and liable for the payment of all
+                    relevant taxes in relation to the payments made under these Terms of Use.</p>
+                <p>Sellers receive the amount (minus Sailspay's Fee or chargebacks or penalties imposed by regulatory
+                    authorities not limited to RBI) in their bank account within T+3 bank working days where T is
+                    defined as the date of intimation of the completion of the transaction. Sailspay shall be entitled to
+                    charge on the Fee, taxes applicable from time to time ("APPLICABLE TAXES"). It is agreed that any
+                    statutory variations in Applicable Taxes during the subsistence of this Agreement shall be borne by
+                    the User. Monthly invoices shall be raised by us in respect of the Fees charged for transactions
+                    processed during such month. Any reasonable dispute in respect of an amount (or a portion thereof)
+                    mentioned in an invoice must be communicated by the User via notice ("INVOICE DISPUTE NOTICE")
+                    within a reasonable period of time but no later than fifteen (15) calendar days from the date of the
+                    invoice. Sailspay shall use good faith efforts to reconcile any reasonably disputed amounts within
+                    reasonable time from the receipt of the Invoice Dispute Notice. In respect of invoices received by
+                    the Client, it is agreed that if the User pays over applicable taxes under the Indian Income Tax
+                    laws and furnishes to us the TRACES certificate in respect of such taxes paid, then we shall
+                    reimburse to the User, on a quarterly basis, the amount in respect of such taxes paid. Once a
+                    payment is authenticated by payment service providers, money shall be moved to the escrow account
+                    and the first settlement shall be initiated only after all required documents (in hard copies) are
+                    received by Sailspay. All risks associated with the delivery of the goods or service will solely be
+                    that of the seller and not of Sailspay. Also, all disputes regarding quality, merchantability,
+                    non-delivery, delay in delivery or otherwise will be directly between the seller and the buyer
+                    without making Sailspay and/or the payment service providers, a party to such disputes. Further,
+                    Sailspay also reserves the right to close, suspend, limit or put on hold the User's access to the
+                    account with Sailspay and/or the funds available therein, including settlements pertaining to the
+                    User under inter alia the following scenarios:</p>
+                <ul>
+                    <li>If such User's KYC credentials are found to be genuine or fake;</li>
+                    <li>If the User makes incorrect or untrue disclosure of the nature of its business;</li>
+                    <li>For violation of any of the provisions of these "Terms of Use";</li>
+                    <li>For violation of any of the provisions of any other agreement that the User has entered into or
+                        might enter into with Sailspay; and</li>
+                    <li>For violation of any of the applicable laws by such User.</li>
+                </ul>
+                <p>Such right to close, suspend, limit or put on hold the User's access to the account with Sailspay
+                    shall continue till such time that such User submits genuine KYC documents or credentials to the
+                    satisfaction of the relevant authorities as per the extant rules, regulations or guidelines with
+                    regard to KYC, as well as to the satisfaction of Sailspay without prejudice to any other legal remedy
+                    that Sailspay is entitled to prefer as per applicable law.</p>
+                <h2 class="text-2xl font-semibold">Prohibited Services</h2>
+                <p>You agree that you will not accept payments in connection with businesses, business activities or
+                    business practices, including but not limited to the following Banned Categories of Products and
+                    Services:</p>
+                <ol>
+                    <li><strong>Adult Goods & Services</strong> - Pornography, other sexually suggestive materials;
+                        Escort/Prostitution services. Personal Massagers/sex toys.</li>
+                    <li><strong>Alcohol or Alcoholic beverages</strong>.</li>
+                    <li><strong>Body Parts</strong>, including organs - Live, cultured, preserved or from cadaver.</li>
+                    <li><strong>Bulk marketing tools</strong> - email lists, software or other products enabling
+                        unsolicited emails/sms.</li>
+                    <li><strong>Cable TV descramblers & black boxes</strong> intended to obtain cable & satellite
+                        signals for free.</li>
+                    <li><strong>Child Pornography</strong> in any form.</li>
+                    <li><strong>Copyright unlocking devices</strong> - Mod chips or other products designed to
+                        circumvent copyright protection.</li>
+                    <li><strong>Copyrighted Media</strong> - unauthorized copies of books, music, movies and other
+                        licensed or protected materials.</li>
+                    <li><strong>Copyrighted Software</strong> which includes unauthorized copies of software, video
+                        games and other licensed or protected materials including OEM or bundled software.</li>
+                    <li><strong>Counterfeit and unauthorized goods</strong> - replica or imitation of designer goods;
+                        fake autographs; counterfeit stamps.</li>
+                    <li><strong>Drugs & drug paraphernalia</strong> which includes illegal drugs and drug accessories
+                        including herbal drugs.</li>
+                    <li><strong>Drug test circumvention aids</strong>, includes drug cleansing shakes, urine test
+                        additives and related items.</li>
+                    <li><strong>Endangered species</strong> - includes plants, animals or other organisms.</li>
+                    <li><strong>Gaming/Gambling</strong> - lottery tickets, sports bets, enrolments in online gambling
+                        sites.</li>
+                    <li><strong>Government ID or documents</strong> which include fake IDs, passports.</li>
+                    <li><strong>Hacking & Cracking materials</strong> which includes manuals, how-to guides, equipment
+                        enabling illegal access to software servers or protected property.</li>
+                    <li><strong>Illegal goods and goods/services promoting/enabling illegal acts</strong>.</li>
+                    <li><strong>Miracle cures</strong>, which are marketed as quick health fixes.</li>
+                    <li><strong>Offensive goods</strong>, which includes literature, products and other materials that
+                        defame or slander any person or group of people, encourage violent acts, promote intolerance or
+                        hatred.</li>
+                    <li><strong>Offensive goods, crime</strong> which includes crime scene photos or items, such as
+                        personal belongings associated with criminals.</li>
+                    <li><strong>Prescription drugs or herbal drugs</strong> of any kind of online pharmacies which
+                        include drugs/other products requiring a prescription by a recognized & licensed medical
+                        practitioner in India or anywhere else.</li>
+                    <li><strong>Pyrotechnic devices & hazardous materials</strong> which includes fireworks & other
+                        toxic/radioactive goods.</li>
+                    <li><strong>Regulated goods</strong>, regulated by government agencies.</li>
+                    <li><strong>Securities</strong>, which includes stocks, bonds, mutual funds or related financial
+                        products or investments.</li>
+                    <li><strong>Tobacco & cigarettes</strong>, chewing tobacco and related products.</li>
+                    <li><strong>Traffic devices</strong> which include radar detectors/jammers, license plate covers,
+                        traffic signal changers and related products.</li>
+                    <li><strong>Weapons</strong> which include knives, brass knuckles, gun parts and other armaments.
+                    </li>
+                    <li><strong>Wholesale currency</strong> which includes discounted currencies or currency.</li>
+                    <li><strong>Live animals or animal parts/products</strong>.</li>
+                    <li><strong>Multi-level Marketing schemes/Pyramid/sites using matrix scheme approach</strong>.</li>
+                    <li><strong>Any intangible goods and services or aggregation/consolidation business</strong>.</li>
+                    <li><strong>Work at home information</strong>.</li>
+                    <li><strong>Drop-Shipped Merchant</strong>.</li>
+                    <li><strong>Web-based telephony/e-mail/SMS/Fax/calling cards/bandwidth/data transfer or allied
+                            services</strong>.</li>
+                    <li><strong>Any product/service that is not in compliance with all Applicable Laws whether federal,
+                            state, both local and international including laws of India</strong>. The above list is
+                        subject to additions/amendments (basis changes/amendments to applicable laws) by Sailspay without
+                        prior intimation to you.</li>
+                </ol>
+                <h2 class="text-2xl font-semibold">Transaction Disputes</h2>
+                <p>Transactions may be disputed anytime within up to 120 (one hundred twenty) days, from the date of
+                    transaction by a buyer, as per the Card Payment Network Rules. Disputes resolved in favour of a
+                    buyer may result in reversal of payment to such buyer ("CHARGEBACK"). In the event of
+                    rejection/suspension of payments to the seller, chargebacks, refunds and/or any other dispute
+                    relating to the transactions contemplated under these Terms of Use ("DISPUTED TRANSACTION"), on any
+                    grounds whatsoever, we will forthwith notify the seller of the same. On such notification the seller
+                    will conduct an internal review of such matter and will, within 5 (five) working days from receipt
+                    of notification, respond to us in writing either:</p>
+                <ul>
+                    <li>Requesting us to refund ("Refund Request") the payment received by the seller in respect of such
+                        Disputed Transaction ("Refund Monies"); or</li>
+                    <li>Providing us with a statement explaining how the Disputed Transaction is not warranted, together
+                        with all documentary evidence in support of contesting such Disputed Transaction.</li>
+                </ul>
+                <p>All refunds shall be made to the original method of payment. In the event that the seller provides a
+                    Refund Request to us or fails to contest such Disputed Transaction within the aforesaid 5 (five)
+                    working days or contests Disputed Transaction without providing supporting documentation to us,
+                    payment service providers, Card Payment Network and/or issuing institution's satisfaction, we will
+                    be entitled to recover the Refund Monies from credits subsequently made to the escrow account with
+                    respect to payments made by the seller's buyers. In the event that we are unable to recover the
+                    Refund Monies as aforesaid, due to the amounts credited to the escrow account being lower than the
+                    Refund Monies, Sailspay shall be entitled to recover such Refund Monies (or any part thereof) from
+                    the User by (i) raising a debit note in respect of such monies; and/or (ii) setting-off the
+                    remaining Refund Monies against the future payables to the seller and refund the same to the
+                    respective buyers. The seller will be liable to make payment of the Refund Monies or part thereof
+                    which has not been recovered by us forthwith. It is hereby agreed and acknowledged by the parties
+                    that the Fees charged by us in respect of the Disputed Transaction will not be refunded or repaid by
+                    us to the seller, buyer or any other person. Further, the Chargeback will be provided within 1 (one)
+                    week of the transaction and the maximum amount of the Chargeback payable by Sailspay to the buyer
+                    will be the value of the transaction only.</p>
+                <h2 class="text-2xl font-semibold">Technical Issues & Delivery Policy</h2>
+                <p>In case of any technical issues, please raise a support ticket from your service dashboard or by
+                    visiting our website <a href="https://Sailspay.com/contact">https://Sailspay.com/contact</a> or by
+                    emailing us at <a href="mailto:support@Sailspay.com">support@Sailspay.com</a> to let us know of the
+                    same. We endeavour to deliver Service to you within 15 (fifteen) working days of bank approval,
+                    failing which you can terminate a transaction related to Service at any time and get a full refund.
+                </p>
+                <h2 class="text-2xl font-semibold">Governing Law, Settlement of Disputes and Jurisdiction</h2>
+                <p>These Terms of Use and any dispute or claim arising under it will be governed by and construed in
+                    accordance with the laws of India. The Users agree that any legal action or proceedings arising out
+                    of these Terms of Use or in connection with these Terms of Use may be brought EXCLUSIVELY in the
+                    competent courts/tribunals having jurisdiction in New Delhi, India and the Users irrevocably submit
+                    themselves to the jurisdiction of such courts/tribunals.</p>
+                <h2 class="text-2xl font-semibold">Privacy</h2>
+                <p>Your privacy is of utmost importance to us. Upon acceptance of these terms of use you confirm that
+                    you have read, understood and unequivocally accepted our policies, including the provisions of our
+                    privacy policy.</p>
+                <h2 class="text-2xl font-semibold">Complaints and Regulatory and Customer Grievance Redressal</h2>
+                <p>Any complaints or concerns with regard to content of this website or comment or breach of these terms
+                    of use or any intellectual property of any user, instances of customer grievances, regulatory
+                    queries and clarifications shall be informed/communicated to the grievance cum nodal officer at the
+                    coordinates mentioned below:</p>
+                <p><strong>Grievance cum Nodal Officer</strong></p>
+                <p>E-MAIL: <a href="mailto:nodal.officer@Sailspay.com">nodal.officer@Sailspay.com</a></p>
+                <p>WEBSITE: <a href="https://Sailspay.com/contact">https://Sailspay.com/contact</a></p>
+                <p><strong>I HEREBY CONFIRM THAT I HAVE READ THESE TERMS OF USE AND ACCEPT THEM.</strong></p>
+        </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer class="w-full bg-[#fff] text-black">
+        <div class="px-4 pt-20 pb-10 sm:px-6 lg:px-24 xl:px-40 flex flex-col gap-10">
+            <!-- Top: Logo & Description -->
+
+            <div class="flex flex-col sm:flex-row justify-between gap-10">
+                <!-- Logo + About -->
+                <div class="max-w-md">
+                    <a href="#">
+                        <img src="assets/img/logo/logo.png" alt="Logo" class="h-20 mb-4" />
+                    </a>
+                    <p class="text-gray-400 ">
+                        Sailspay provides seamless, secure & scalable payment solutions for businesses of all sizes.
+                        Trusted by thousands of Indian businesses.
+                    </p>
+                    <!-- Social icons -->
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class=" transition">
+                            <svg class="w-5 h-5 fill-current text-[#1e9bf0]" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.46 6c-.77.35-1.6.58-2.47.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.29 3.9A12.15 12.15 0 0 1 3.16 4.87a4.28 4.28 0 0 0 1.33 5.71 4.24 4.24 0 0 1-1.94-.54v.05a4.29 4.29 0 0 0 3.44 4.2 4.28 4.28 0 0 1-1.93.07 4.29 4.29 0 0 0 4 2.98A8.6 8.6 0 0 1 2 19.54 12.13 12.13 0 0 0 8.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.4 8.4 0 0 0 22.46 6z" />
+                            </svg>
+                        </a>
+                        <a href="#" class=" transition">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.39 2.84 8.13 6.77 9.46.5.09.68-.22.68-.48v-1.7c-2.76.6-3.34-1.18-3.34-1.18-.46-1.17-1.13-1.48-1.13-1.48-.92-.63.07-.62.07-.62 1.02.07 1.56 1.05 1.56 1.05.9 1.55 2.36 1.1 2.94.84.09-.65.35-1.1.63-1.35-2.2-.25-4.52-1.1-4.52-4.89 0-1.08.39-1.96 1.03-2.65-.1-.26-.45-1.29.1-2.69 0 0 .84-.27 2.75 1.02a9.52 9.52 0 0 1 5 0c1.9-1.3 2.74-1.02 2.74-1.02.56 1.4.21 2.43.1 2.69.64.7 1.03 1.58 1.03 2.65 0 3.8-2.32 4.63-4.53 4.87.36.31.69.92.69 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 22 12c0-5.5-4.46-9.96-9.96-9.96z" />
+                            </svg>
+                        </a>
+                        <a href="#" class=" transition">
+                            <svg class="w-5 h-5" style="color: #0077B5;" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill-current"
+                                    d="M22.23 0H1.77A1.77 1.77 0 0 0 0 1.77v20.46A1.77 1.77 0 0 0 1.77 24h20.46A1.77 1.77 0 0 0 24 22.23V1.77A1.77 1.77 0 0 0 22.23 0zM7.09 20.45H3.55V9h3.54v11.45zM5.32 7.44a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM20.45 20.45h-3.54v-5.6c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.7h-3.54V9h3.4v1.56h.05a3.72 3.72 0 0 1 3.35-1.84c3.58 0 4.24 2.35 4.24 5.4v6.33z" />
+                            </svg>
+
+                        </a>
+                        <a href="#" class=" transition">
+                            <svg class="w-5 h-5" style="color: #E1306C;" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill-current"
+                                    d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-1.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                    <div>
+                        <h4 class="font-semibold mb-2">Products</h4>
+                        <ul class="space-y-1 text-sm text-[#012139]">
+                            <li><a href="payment-gateway.html" class="hover:text-[#1290bd]">Payment Gateway</a></li>
+                            <li><a href="payment-link.html" class="hover:text-[#1290bd]">Payment Link</a></li>
+                        </ul>
+                        <h4 class="font-semibold mb-2"><a href="pricing.html">Pricing</a> </h4>
+                        <h4 class="font-semibold mb-2"><a href="contact-us.html">Support</a> </h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-2">Company</h4>
+                        <ul class="space-y-1 text-sm text-[#012139]">
+                            <li><a href="about-us.html" class="hover:text-[#1290bd]">About Us</a></li>
+                            <li><a href="terms&condition.html" class="hover:text-[#1290bd]">Terms & Conditions</a></li>
+                            <li><a href="privacy-policies.html" class="hover:text-[#1290bd]">Privacy Policy</a></li>
+                            <li><a href="grievance-redressal.html" class="hover:text-[#1290bd]">Grievance Policy</a>
+                            </li>
+                            <li><a href="#" class="hover:text-[#1290bd]">Merchant Policy</a></li>
+                            <li><a href="contact-us.html" class="hover:text-[#1290bd]"> Contact US</a></li>
+                            <li><a href="bug-bounty.html" class="hover:text-[#1290bd]">Bug Bounty</a></li>
+                            <li><a href="blog.html" class="hover:text-[#1290bd]">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-2">Developers</h4>
+                        <ul class="space-y-1 text-sm text-[#012139]">
+                            <li><a href="#" class="hover:text-[#1290bd]">Getting Started</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">Integration Docs</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">API Referrence</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">FaQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-[#012139]">
+                &copy;<span class="text-[#1290bd]">TSSG 2025 .</span> All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
