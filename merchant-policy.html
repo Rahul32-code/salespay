@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SailsPay</title>
+
+    <link rel="icon" type="image/png" href="assets/img/logo/logo.png">
+
+    <!-- ✅ External Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itswadesh/netflix-scroll/netflix-scroll.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white text-black">
+    <!-- Top Announcement Bar -->
+    <div class="bg-[#02233e] w-full z-40">
+        <div
+            class="container mx-auto flex flex-row lg:flex-row justify-center items-center px-4 py-2 gap-2 md:gap-4 lg:gap-6">
+            <div class="flex flex-wrap gap-1.5 justify-center items-center text-center lg:text-left">
+                <p class="text-white font-semibold  text-[.7rem] sm:text-sm md:text-base lg:text-lg">Welcome to
+                    <span class="text-[#1a91bb]">SailsPay</span> Payment Aggregator
+                </p>
+                <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/approval-logo.svg" alt=""
+                    class="w-4 md:w-5 h-auto">
+            </div>
+            <div class="hidden md:flex flex-wrap justify-center items-center">
+                <button
+                    class="border-1 border-[#fff] text-[#fff] rounded-md px-4 py-1 cursor-pointer hover:border-[#1a91bb] hover:text-[#1a91bb]">Know
+                    More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- lower -->
+    <div class="w-full sticky top-0 z-50 backdrop-blur-[50px] ">
+        <div class="flex justify-between items-center py-4 px-4 sm:px-6 lg:px-24 xl:px-40">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="index.html" class="inline-block">
+                    <img src="assets/img/logo/logo.png" alt=" Logo" class="w-24 sm:w-28 lg:w-32 object-contain">
+                </a>
+            </div>
+
+            <!-- Nav Menu -->
+            <div class="hidden md:inline-block">
+                <div class="flex items-center justify-center">
+                    <ul class="flex items-center gap-6">
+
+                        <!-- Products with Dropdown -->
+                        <li class="relative group">
+                            <span
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out cursor-pointer">
+                                Products
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </span>
+
+                            <!-- Dropdown Menu -->
+                            <ul
+                                class="absolute left-0 mt-4 w-48 bg-white border border-[#108fba67] shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <li>
+                                    <a href="payment-gateway.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f9ff] hover:text-[#108fba] transition">
+                                        Payment Gateway
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="payment-link.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f9ff] hover:text-[#108fba] transition">
+                                        Payment Link
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Other Nav Links -->
+                        <li>
+                            <a href="pricing.html"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Pricing
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Developers
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact-us.html"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Support
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        
+
+                        <li>
+                            <a href="blog.html"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Blog
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Buttons -->
+            <div class="flex items-center gap-3">
+                <button
+                    class="hidden sm:inline-block border border-[#1a91bb] text-[#1a91bb] rounded-md px-4 py-1 font-semibold hover:bg-[#6d44e5] hover:border-[#6d44e5] hover:text-[#85E6C4] transition-all duration-300 cursor-pointer">
+                    <a href="login.html">Login</a>
+                </button>
+
+
+                <button
+                    class="hidden sm:inline-block bg-[#517ce3] text-white border border-[#517ce3] rounded-md px-4 py-1 font-semibold hover:bg-[#6d44e5] hover:border-[#6d44e5] hover:text-[#85E6C4] transition-all duration-300 cursor-pointer">
+                    <a href="signup.html">Sign Up</a>
+                </button>
+                <button class="  bg-slate-200 px-4 py-1 rounded-md hover:bg-slate-300 cursor-pointer md:hidden"
+                    id="openSidebarBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div id="sidebarOverlay" class="w-full h-full fixed inset-0 bg-[rgba(33,37,41,0.94)] z-50 hidden">
+        <!-- Close Button -->
+        <button id="closeSidebarBtn"
+            class="absolute top-5 right-5 text-4xl text-white hover:text-slate-300 cursor-pointer">
+            &times;
+        </button>
+
+        <div class="px-5 pt-20 pb-10 h-full">
+            <div class="bg-white shadow-lg flex flex-col rounded-md h-full">
+
+                <!-- Top Logo -->
+                <div class="flex items-center justify-center h-20 border-b shrink-0">
+                    <img src="assets/img/logo/logo.png" alt="Logo" class="h-10" />
+                </div>
+
+                <!-- Scrollable Menu -->
+                <div class="flex-1 overflow-y-auto px-6 py-6 bg-white">
+                    <ul class="space-y-2">
+
+                        <!-- Products Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('products-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Products
+                                    <i id="arrow-icon-products-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="products-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="payment-gateway.html" class="block px-2 py-2 hover:text-blue-600">Payment
+                                        Gateway</a></li>
+                                <li><a href="payment-link.html" class="block px-2 py-2 hover:text-blue-600">Payment
+                                        Link</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Developers Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('developers-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Developers
+                                    <i id="arrow-icon-developers-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="developers-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Getting Started</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Integration Docs</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">API Reference</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">FAQs</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Static Links -->
+                        <li class="border-b border-b-gray-700">
+                            <a href="pricing.html"
+                                class="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">Pricing</a>
+                        </li>
+                        <li class="border-b border-b-gray-700">
+                            <a href="contact-us.html"
+                                class="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">Support</a>
+                        </li>
+
+                        <!-- Resources Dropdown -->
+                        <!--  <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('resources-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Resources
+                                    <i id="arrow-icon-resources-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="resources-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Plugins</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Merchant Account</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">UPI</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">PG Integration</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Tokenization</a></li>
+                            </ul>
+                        </li> -->
+
+                        <li class="border-b border-b-gray-700">
+                            <a href="blog.html"
+                                class="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">Blog</a>
+                        </li>
+
+                        <!-- Company Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('company-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Company
+                                    <i id="arrow-icon-company-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="company-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="about-us.html" class="block px-2 py-2 hover:text-blue-600">About Us</a>
+                                </li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Terms & Conditions</a></li>
+                                <li><a href="privacy-policies.html" class="block px-2 py-2 hover:text-blue-600">Privacy
+                                        Policy</a></li>
+                                <li><a href="contact-us.html" class="block px-2 py-2 hover:text-blue-600">Contact Us</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="w-full bg-white text-[#02233e] p-6 space-y-6">
+        <h2 class="text-2xl font-bold">Merchant Policy 1: REGISTRATION FOR SERVICE</h2>
+
+        <p>Merchant should register with us and open a Zaakpay merchant account in order to use the Services. We allow
+            both Individuals and Legal Entities to register with Zaakpay.</p>
+
+        <h3 class="text-xl font-semibold">a) Create login</h3>
+        <p>The merchant intending to avail the PA services of the Company is required to sign-up by creating a login ID
+            and password. Post signing up, the merchant fills the activation form by providing details such as:</p>
+        <ul class="list-disc pl-5">
+            <li>Personal information – Name, Address and Contact details</li>
+            <li>Business related information – Name, Address, Contact details, business details etc.</li>
+            <li>Site URL, business model, etc.</li>
+            <li>Bank details</li>
+            <li>The merchant also agrees to the terms and conditions at this stage.</li>
+        </ul>
+        <p>Current, accurate and complete information should be provided during registration. Merchants must maintain
+            and promptly update their information as necessary. In case we believe the information is untrue,
+            inaccurate, not current or incomplete, we may suspend or terminate the merchant account.</p>
+
+        <h3 class="text-xl font-semibold">b) Document Collection</h3>
+        <p>The merchant then uploads proof of information provided above. These documents are uploaded by the merchant
+            on the portal itself and include but are not limited to:</p>
+        <ul class="list-disc pl-5">
+            <li>Copy of PAN</li>
+            <li>Copy of any address proof</li>
+            <li>Copy of bank statement or cancelled cheque</li>
+            <li>Any other relevant document</li>
+        </ul>
+        <p>The documents required vary based on the type of business entity. Below is an indicative list of
+            documentation:</p>
+
+        <h4 class="text-lg font-semibold">1. Sole Proprietorship</h4>
+        <ul class="list-disc pl-5">
+            <li>PAN/Form 60 of the proprietor</li>
+            <li>Address detail of proprietor & business</li>
+            <li>Bank details</li>
+            <li>GSTIN details</li>
+            <li>Business details</li>
+            <li>Merchant Agreement/Terms & Conditions</li>
+        </ul>
+
+        <h4 class="text-lg font-semibold">2. Limited Liability Partnership</h4>
+        <p>Required documents include (but are not limited to):</p>
+        <ul class="list-disc pl-5">
+            <li>LLP Deed, Certificate of Incorporation, PAN, GST Certificate</li>
+            <li>Address proof (Govt-issued bill or Rent Agreement + Utility Bill)</li>
+            <li>Authorization Letter for Signing Authority</li>
+            <li>Identity proof of signing authority (Passport, Driving License, Aadhaar, Election ID)</li>
+            <li>Bank verification (Cancelled cheque or bank statement with attestation)</li>
+            <li>Merchant Agreement</li>
+        </ul>
+
+        <h4 class="text-lg font-semibold">3. Partnership</h4>
+        <ul class="list-disc pl-5">
+            <li>Partnership Deed, PAN, GST Certificate or Certificate of Registration</li>
+            <li>Address proof of business</li>
+            <li>Deed of Partnership</li>
+            <li>Signatory documents</li>
+            <li>Bank verification documents</li>
+            <li>Merchant Agreement</li>
+        </ul>
+
+        <h4 class="text-lg font-semibold">4. Private/Public Limited Company</h4>
+        <ul class="list-disc pl-5">
+            <li>Legal documents (Service Tax, VAT, Shop Act, Trade License, GST, etc.)</li>
+            <li>Certificate of Incorporation, MOA, AOA</li>
+            <li>Board Resolution for Signing Authority</li>
+            <li>Identity proof of signing authority</li>
+            <li>Bank account verification</li>
+            <li>Merchant Agreement</li>
+        </ul>
+
+        <h4 class="text-lg font-semibold">5. Trust/NGO/Society</h4>
+        <ul class="list-disc pl-5">
+            <li>Legal proof (Service Tax, VAT, Shop Act, etc.)</li>
+            <li>Trust Deed or Byelaws</li>
+            <li>Power of Attorney for Signing Authority</li>
+            <li>Identity and address proof of signing authority</li>
+            <li>Bank verification documents</li>
+            <li>Merchant Agreement</li>
+        </ul>
+
+        <h4 class="text-lg font-semibold">6. Body of Individuals</h4>
+        <ul class="list-disc pl-5">
+            <li>Resolution of managing body</li>
+            <li>Power of attorney to transact on behalf</li>
+            <li>Bank statement/cancelled cheque</li>
+            <li>Signatory identity, PAN, address, photo</li>
+            <li>PAN Card of entity, address proof, GSTIN, TAN</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold">2. Eligibility Requirements</h3>
+        <ul class="list-disc pl-5">
+            <li>18 years of age or older</li>
+            <li>Not 'incompetent to contract' as per Indian Contract Act, 1972</li>
+            <li>Legally able to enter and perform this agreement with Zaakpay</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold">3. Background Verification</h3>
+        <p>Background verification may be conducted as required to ensure compliance and legality of the registration
+            and operation.</p>
+        <h3 class="text-xl font-semibold">3. Activation Review Process</h3>
+        <p>
+            Once the activation form has been filled by the merchant, the Activation and Risk teams conduct a thorough
+            review of the documents, business model, etc., by performing various checks, including:
+        </p>
+        <ul class="list-disc pl-5 space-y-1">
+            <li>Identifying duplicate merchants using parameters such as PAN, CIN/GSTIN, and Director’s DIN</li>
+            <li>Matching against negative category lists provided by network associations</li>
+            <li>Screening against multiple watchlists (Accuity/LexisNexis) related to sanctions, terrorism, and
+                high-risk entities</li>
+            <li>Tele-verification and email verification of the merchant</li>
+            <li>PCI-DSS/PA-DSS compliance checks on the merchant's infrastructure, where applicable</li>
+            <li>Comprehensive security assessment to ensure compliance with baseline security controls</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold">4. Due Diligence</h3>
+        <p>Due diligence involves verification of merchant-submitted documents including:</p>
+        <ul class="list-disc pl-5 space-y-1">
+            <li>VAT, Service Tax, and Sales Tax (if applicable)</li>
+            <li>For registered companies, CIN verification on the MCA website and verification of the authorized
+                signatory</li>
+            <li>PAN and Aadhaar card verification</li>
+        </ul>
+        <p>Website scrutiny includes review of the following:</p>
+        <ul class="list-disc pl-5 space-y-1">
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Refund and Cancellation Policy</li>
+            <li>Product/Service information</li>
+            <li>Pricing and complete payment flow</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold">5. Rights Merchants Grant to Us</h3>
+        <p>
+            By submitting information, data, passwords, usernames, other login information, materials, and content to
+            us, you grant us the right to use that information for providing services. We may use and store the content
+            per the Agreement and Privacy Statement, without any obligation to pay fees or face restrictions.
+        </p>
+        <p>
+            By using our services, you authorize Zaakpay to access your account and payment information and submit it
+            for processing to relevant parties. We act solely as a payment intermediary, facilitating your instructions
+            and offering value-added services.
+        </p>
+
+        <h3 class="text-xl font-semibold">6. Risk Categorization and Periodic Updation</h3>
+        <p>
+            The Risk team classifies merchants based on factors such as nature of business, services/products offered,
+            business model, turnover, and ticket size. Based on this, merchants are categorized as High, Medium, or Low
+            risk.
+        </p>
+        <p>
+            Merchants are required to update their KYC documents periodically, in accordance with company policy:
+        </p>
+        <ul class="list-disc pl-5 space-y-1">
+            <li>High Risk – every 2 years</li>
+            <li>Medium Risk – every 8 years</li>
+            <li>Low Risk – every 10 years</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold">7. Enhanced Due Diligence</h3>
+        <p>Merchants falling into the High-Risk category must provide additional documents. Examples include:</p>
+        <table class="w-full table-auto border border-gray-300 text-left">
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="border px-4 py-2">Business Type</th>
+                    <th class="border px-4 py-2">Required Document</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border px-4 py-2">Mutual Fund</td>
+                    <td class="border px-4 py-2">AMFI Registration Certificate</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Insurance</td>
+                    <td class="border px-4 py-2">IRDAI Registration Certificate</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Investment Advisory</td>
+                    <td class="border px-4 py-2">SEBI Registration Certificate</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Jewelry</td>
+                    <td class="border px-4 py-2">BIS, GII, GIA Certificate</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">NGO</td>
+                    <td class="border px-4 py-2">12A, 80G Certificates</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">PPI Issuers</td>
+                    <td class="border px-4 py-2">RBI Certificate of Authorization</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Forex</td>
+                    <td class="border px-4 py-2">FFMC License</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Schools/Colleges</td>
+                    <td class="border px-4 py-2">Affiliation Certificates</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            If a merchant’s business model falls under a prohibited category, the application is rejected.
+        </p>
+        <p>
+            If the business model is clear from the website, the MCC is assigned using the MasterCard MCC guide. If
+            unclear:
+        </p>
+        <ul class="list-disc pl-5 space-y-1">
+            <li>A clarification email is sent to the merchant</li>
+            <li>Based on the response, the MCC is finalized</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold">8. Setting Limits</h3>
+        <p>
+            The Risk team sets limits on newly onboarded merchants for the first 15–20 days or first 10 transactions
+            (whichever is higher), based on expected ticket size and product pricing. These are gradually revised based
+            on merchant performance.
+        </p>
+        <ul class="list-disc pl-5 space-y-1">
+            <li><strong>E-Commerce Merchants:</strong> Shipping and refund policies are reviewed. If delivery timelines
+                exceed the settlement cycle, extended settlement terms (e.g., T+15 working days) may be applied.</li>
+            <li><strong>Subscription/SaaS/PaaS Merchants:</strong> If the merchant is newly registered, a ticket-size
+                alert is set based on the maximum transaction value.</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold">9. Merchant Registration</h3>
+        <p>
+            Upon successful verification and limit setting, the merchant is assigned an MCC and account activation is
+            completed. Activation details are shared via the registered mode of communication.
+        </p>
+
+        <h3 class="text-xl font-semibold">10. Offboarding Process</h3>
+        <p>
+            Merchants may be offboarded either at their own request or by the Company for reasons such as:
+        </p>
+        <ul class="list-disc pl-5 space-y-1">
+            <li>High chargebacks</li>
+            <li>Frequent customer disputes</li>
+            <li>Engaging in activities not disclosed at onboarding</li>
+            <li>Failure to provide required information or documents</li>
+        </ul>
+        <p>
+            Either party may terminate the agreement with 45 business days' prior written notice. Post-termination,
+            Zaakpay withholds funds for 180 days to address potential disputes, after which remaining amounts (if any)
+            are settled post necessary adjustments.
+        </p>
+
+        <h3 class="text-xl font-semibold">11. Indemnification</h3>
+        <p>
+            Merchants agree to defend, indemnify, and hold harmless Zaakpay, its contractors, Payment System Providers,
+            and its directors, employees, and agents from any claims, damages, liabilities, or expenses (including
+            attorney fees) arising from:
+        </p>
+        <ul class="list-disc pl-5 space-y-1">
+            <li>Breach of Zaakpay’s terms or policies</li>
+            <li>Violation of applicable laws or payment network rules</li>
+            <li>Misuse of Zaakpay’s services</li>
+            <li>Infringement of third-party rights</li>
+        </ul>
+    </section>
+
+
+
+
+    <!-- footer -->
+    <footer class="w-full bg-[#fff] text-black">
+        <div class="px-4 pt-20 pb-10 sm:px-6 lg:px-24 xl:px-40 flex flex-col gap-10">
+            <!-- Top: Logo & Description -->
+
+            <div class="flex flex-col sm:flex-row justify-between gap-10">
+                <!-- Logo + About -->
+                <div class="max-w-md">
+                    <a href="#">
+                        <img src="assets/img/logo/logo.png" alt="Logo" class="h-20 mb-4" />
+                    </a>
+                    <p class="text-gray-400 ">
+                        Sailspay provides seamless, secure & scalable payment solutions for businesses of all sizes.
+                        Trusted by thousands of Indian businesses.
+                    </p>
+                    <!-- Social icons -->
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class=" transition">
+                            <svg class="w-5 h-5 fill-current text-[#1e9bf0]" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.46 6c-.77.35-1.6.58-2.47.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.29 3.9A12.15 12.15 0 0 1 3.16 4.87a4.28 4.28 0 0 0 1.33 5.71 4.24 4.24 0 0 1-1.94-.54v.05a4.29 4.29 0 0 0 3.44 4.2 4.28 4.28 0 0 1-1.93.07 4.29 4.29 0 0 0 4 2.98A8.6 8.6 0 0 1 2 19.54 12.13 12.13 0 0 0 8.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.4 8.4 0 0 0 22.46 6z" />
+                            </svg>
+                        </a>
+                        <a href="#" class=" transition">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.39 2.84 8.13 6.77 9.46.5.09.68-.22.68-.48v-1.7c-2.76.6-3.34-1.18-3.34-1.18-.46-1.17-1.13-1.48-1.13-1.48-.92-.63.07-.62.07-.62 1.02.07 1.56 1.05 1.56 1.05.9 1.55 2.36 1.1 2.94.84.09-.65.35-1.1.63-1.35-2.2-.25-4.52-1.1-4.52-4.89 0-1.08.39-1.96 1.03-2.65-.1-.26-.45-1.29.1-2.69 0 0 .84-.27 2.75 1.02a9.52 9.52 0 0 1 5 0c1.9-1.3 2.74-1.02 2.74-1.02.56 1.4.21 2.43.1 2.69.64.7 1.03 1.58 1.03 2.65 0 3.8-2.32 4.63-4.53 4.87.36.31.69.92.69 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 22 12c0-5.5-4.46-9.96-9.96-9.96z" />
+                            </svg>
+                        </a>
+                        <a href="#" class=" transition">
+                            <svg class="w-5 h-5" style="color: #0077B5;" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill-current"
+                                    d="M22.23 0H1.77A1.77 1.77 0 0 0 0 1.77v20.46A1.77 1.77 0 0 0 1.77 24h20.46A1.77 1.77 0 0 0 24 22.23V1.77A1.77 1.77 0 0 0 22.23 0zM7.09 20.45H3.55V9h3.54v11.45zM5.32 7.44a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM20.45 20.45h-3.54v-5.6c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.7h-3.54V9h3.4v1.56h.05a3.72 3.72 0 0 1 3.35-1.84c3.58 0 4.24 2.35 4.24 5.4v6.33z" />
+                            </svg>
+
+                        </a>
+                        <a href="#" class=" transition">
+                            <svg class="w-5 h-5" style="color: #E1306C;" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill-current"
+                                    d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-1.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                    <div>
+                        <h4 class="font-semibold mb-2">Products</h4>
+                        <ul class="space-y-1 text-sm text-[#012139]">
+                            <li><a href="payment-gateway.html" class="hover:text-[#1290bd]">Payment Gateway</a></li>
+                            <li><a href="payment-link.html" class="hover:text-[#1290bd]">Payment Link</a></li>
+                        </ul>
+                        <h4 class="font-semibold mb-2"><a href="pricing.html">Pricing</a> </h4>
+                        <h4 class="font-semibold mb-2"><a href="contact-us.html">Support</a> </h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-2">Company</h4>
+                        <ul class="space-y-1 text-sm text-[#012139]">
+                            <li><a href="about-us.html" class="hover:text-[#1290bd]">About Us</a></li>
+                            <li><a href="terms&condition.html" class="hover:text-[#1290bd]">Terms & Conditions</a></li>
+                            <li><a href="privacy-policies.html" class="hover:text-[#1290bd]">Privacy Policy</a></li>
+                            <li><a href="grievance-redressal.html" class="hover:text-[#1290bd]">Grievance Policy</a>
+                            </li>
+                            <li><a href="merchant-policy.html" class="hover:text-[#1290bd]">Merchant Policy</a></li>
+                            <li><a href="contact-us.html" class="hover:text-[#1290bd]"> Contact US</a></li>
+                            <li><a href="bug-bounty.html" class="hover:text-[#1290bd]">Bug Bounty</a></li>
+                            <li><a href="blog.html" class="hover:text-[#1290bd]">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-2">Developers</h4>
+                        <ul class="space-y-1 text-sm text-[#012139]">
+                            <li><a href="#" class="hover:text-[#1290bd]">Getting Started</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">Integration Docs</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">API Referrence</a></li>
+                            <li><a href="#" class="hover:text-[#1290bd]">FaQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-[#012139]">
+                &copy;<span class="text-[#1290bd]">TSSG 2025 .</span> All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

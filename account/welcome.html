@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SailsPay</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/logo/logo.png">
+
+    <!-- ✅ External Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itswadesh/netflix-scroll/netflix-scroll.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white text-black">
+    <!-- Top Announcement Bar -->
+    <div class="bg-[#02233e] w-full z-40">
+        <div
+            class="container mx-auto flex flex-row lg:flex-row justify-center items-center px-4 py-2 gap-2 md:gap-4 lg:gap-6">
+            <div class="flex flex-wrap gap-1.5 justify-center items-center text-center lg:text-left">
+                <p class="text-white font-semibold  text-[.7rem] sm:text-sm md:text-base lg:text-lg">Welcome to
+                    <span class="text-[#1a91bb]">SailsPay</span> Payment Aggregator
+                </p>
+                <img src="https://campaign.easebuzz.in/best-payment-gateway/index_files/approval-logo.svg" alt=""
+                    class="w-4 md:w-5 h-auto">
+            </div>
+            <div class="hidden md:flex flex-wrap justify-center items-center">
+                <button
+                    class="border-1 border-[#fff] text-[#fff] rounded-md px-4 py-1 cursor-pointer hover:border-[#1a91bb] hover:text-[#1a91bb]">Know
+                    More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- lower -->
+    <div class="w-full sticky top-0 z-50 backdrop-blur-[50px] ">
+        <div class="flex justify-between items-center py-4 px-4 sm:px-6 lg:px-24 xl:px-40">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="index.html" class="inline-block">
+                    <img src="../assets/img/logo/logo.png" alt=" Logo" class="w-24 sm:w-28 lg:w-32 object-contain">
+                </a>
+            </div>
+
+            <!-- Nav Menu -->
+            <div class="hidden md:inline-block">
+                <div class="flex items-center justify-center">
+                    <ul class="flex items-center gap-6">
+
+                        <!-- Products with Dropdown -->
+                        <li class="relative group">
+                            <span
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out cursor-pointer">
+                                Products
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </span>
+
+                            <!-- Dropdown Menu -->
+                            <ul
+                                class="absolute left-0 mt-4 w-48 bg-white border border-[#108fba67] shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <li>
+                                    <a href="payment-gateway.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f9ff] hover:text-[#108fba] transition">
+                                        Payment Gateway
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="payment-link.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f9ff] hover:text-[#108fba] transition">
+                                        Payment Link
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Other Nav Links -->
+                        <li>
+                            <a href="pricing.html"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Pricing
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Developers
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact-us.html"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Support
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="blog.html"
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out group">
+                                Blog
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        <li class="relative group">
+                            <span
+                                class="relative text-[#021c3a] font-semibold hover:text-[#108fba] transition duration-300 ease-in-out cursor-pointer">
+                                username
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#108fba] transition-all duration-300 group-hover:w-full"></span>
+                            </span>
+
+                            <!-- Dropdown Menu -->
+                            <ul
+                                class="absolute left-0 mt-4 w-48 bg-white border border-[#108fba67] shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <li>
+                                    <a href=""
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f9ff] hover:text-[#108fba] transition">
+                                        Logout
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f9ff] hover:text-[#108fba] transition">
+                                        Forgot Password
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="flex items-center gap-3">
+                <button
+                    class="hidden sm:inline-block border border-[#1a91bb] text-[#1a91bb] rounded-md px-4 py-1 font-semibold hover:bg-[#6d44e5] hover:border-[#6d44e5] hover:text-[#85E6C4] transition-all duration-300 cursor-pointer">
+                    <a href="login.html">Login</a>
+                </button>
+
+
+                <button
+                    class="hidden sm:inline-block bg-[#517ce3] text-white border border-[#517ce3] rounded-md px-4 py-1 font-semibold hover:bg-[#6d44e5] hover:border-[#6d44e5] hover:text-[#85E6C4] transition-all duration-300 cursor-pointer">
+                    <a href="signup.html">Sign Up</a>
+                </button>
+                <button class="  bg-slate-200 px-4 py-1 rounded-md hover:bg-slate-300 cursor-pointer md:hidden"
+                    id="openSidebarBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div id="sidebarOverlay" class="w-full h-full fixed inset-0 bg-[rgba(33,37,41,0.94)] z-50 hidden">
+        <!-- Close Button -->
+        <button id="closeSidebarBtn"
+            class="absolute top-5 right-5 text-4xl text-white hover:text-slate-300 cursor-pointer">
+            &times;
+        </button>
+
+        <div class="px-5 pt-20 pb-10 h-full">
+            <div class="bg-white shadow-lg flex flex-col rounded-md h-full">
+
+                <!-- Top Logo -->
+                <div class="flex items-center justify-center h-20 border-b shrink-0">
+                    <img src="../assets/img/logo/logo.png" alt="Logo" class="h-10" />
+                </div>
+
+                <!-- Scrollable Menu -->
+                <div class="flex-1 overflow-y-auto px-6 py-6 bg-white">
+                    <ul class="space-y-2">
+
+                        <!-- Products Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('products-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Products
+                                    <i id="arrow-icon-products-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="products-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="payment-gateway.html" class="block px-2 py-2 hover:text-blue-600">Payment
+                                        Gateway</a></li>
+                                <li><a href="payment-link.html" class="block px-2 py-2 hover:text-blue-600">Payment
+                                        Link</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Developers Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('developers-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Developers
+                                    <i id="arrow-icon-developers-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="developers-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Getting Started</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Integration Docs</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">API Reference</a></li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">FAQs</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Static Links -->
+                        <li class="border-b border-b-gray-700">
+                            <a href="pricing.html"
+                                class="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">Pricing</a>
+                        </li>
+                        <li class="border-b border-b-gray-700">
+                            <a href="contact-us.html"
+                                class="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">Support</a>
+                        </li>
+
+
+
+                        <li class="border-b border-b-gray-700">
+                            <a href="blog.html"
+                                class="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">Blog</a>
+                        </li>
+
+                        <!-- Company Dropdown -->
+                        <li class="border-b border-b-gray-500">
+                            <button onclick="toggleDropdown('company-menu')"
+                                class="w-full text-left block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-300 relative group hover:bg-blue-50 hover:text-blue-600">
+                                <span class="relative block pl-2">
+                                    Company
+                                    <i id="arrow-icon-company-menu"
+                                        class="fas fa-chevron-right absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 transition-transform duration-200"></i>
+                                </span>
+                            </button>
+                            <ul id="company-menu" class="ml-6 mt-2 space-y-1 text-sm text-gray-600 hidden">
+                                <li><a href="about-us.html" class="block px-2 py-2 hover:text-blue-600">About Us</a>
+                                </li>
+                                <li><a href="#" class="block px-2 py-2 hover:text-blue-600">Terms & Conditions</a></li>
+                                <li><a href="privacy-policies.html" class="block px-2 py-2 hover:text-blue-600">Privacy
+                                        Policy</a></li>
+                                <li><a href="contact-us.html" class="block px-2 py-2 hover:text-blue-600">Contact Us</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="w-full bg-white min-h-screen" id="hero">
+        <div class="px-4 sm:px-6 lg:px-24 xl:px-40 py-10">
+            <!-- Responsive Flex (Stack on small screens) -->
+            <div class="flex flex-col lg:flex-row gap-2">
+
+                <!-- Sidebar -->
+                <div class="w-full lg:w-1/4 bg-gray-100 rounded-xl p-6 shadow-md">
+                    <!-- Progress -->
+                    <div>
+                        <input type="range" id="progress" value="20" class="w-full accent-blue-600" />
+                        <p class="text-sm mt-2 text-blue-600 font-semibold">Progress 20%</p>
+                    </div>
+
+                    <!-- Sidebar List -->
+                    <ul class="mt-8 space-y-4">
+                        <li>
+                            <a href="welcome.html" class="flex items-center gap-3 p-2 rounded-lg hover:bg-blue-100 transition">
+                                <i class="fa-solid fa-home text-lg text-blue-600"></i>
+                                <span class="text-gray-800 font-medium">Welcome</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboard.html" class="flex items-center gap-3 p-2 rounded-lg hover:bg-blue-100 transition">
+                                <i class="fa-solid fa-chart-line text-lg text-blue-600"></i>
+                                <span class="text-gray-800 font-medium">Overview</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="transactions.html" class="flex items-center gap-3 p-2 rounded-lg hover:bg-blue-100 transition">
+                                <i class="fa-solid fa-building-columns text-lg text-blue-600"></i>
+                                <span class="text-gray-800 font-medium">Transactions</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Main Content -->
+                <div class="w-full lg:w-3/4">
+                    <div class="bg-[#253bbd] rounded-xl shadow-md p-6">
+                        <!-- Step Progress -->
+                        <div class="flex flex-col md:flex-row items-center justify-center py-8 gap-4">
+                            <!-- Step 1 -->
+                            <div class="flex items-center text-white font-semibold">
+                                <div class="w-6 h-6 flex items-center justify-center rounded-full bg-blue-500">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="3"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <span class="ml-2">Experience payment gateway</span>
+                            </div>
+
+                            <!-- Line -->
+                            <div class="h-0.5 bg-white w-10 md:w-10 mx-2"></div>
+
+                            <!-- Step 2 -->
+                            <div class="flex items-center text-white font-semibold">
+                                <div
+                                    class="w-6 h-6 flex items-center justify-center rounded-full border-2 border-white bg-blue-600">
+                                    <div class="w-3 h-3 rounded-full bg-white"></div>
+                                </div>
+                                <span class="ml-2">Activate Your Account</span>
+                            </div>
+
+                            <!-- Line -->
+                            <div class="h-0.5 bg-white w-10 md:w-10 mx-2"></div>
+
+                            <!-- Step 3 -->
+                            <div class="flex items-center text-white font-semibold opacity-60">
+                                <div
+                                    class="w-6 h-6 flex items-center justify-center rounded-full bg-slate-400 text-white text-sm font-bold">
+                                    3
+                                </div>
+                                <span class="ml-2">Collect Payments</span>
+                            </div>
+                        </div>
+
+                        <!-- Welcome Message & Image -->
+                        <div class="flex flex-col md:flex-row items-center justify-between mt-5 gap-6">
+                            <!-- Left -->
+                            <div class="w-full md:w-[60%]">
+                                <h2 class="text-lg font-semibold text-white mb-6">Welcome, username</h2>
+                                <button
+                                    class="px-4 py-2 bg-white text-[#002039] rounded-md hover:bg-[#002039] hover:text-white transition">
+                                    Activate your account
+                                </button>
+                            </div>
+
+                            <!-- Right -->
+                            <div class="w-full md:w-[35%]">
+                                <img src="https://zaakpay.com/mobile-wallet-light.9f3c28e134bc3af7.svg"
+                                    alt="Illustration" class="w-full rounded-md shadow" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="py-6 text-lg font-semibold">Integrate - Connect your website or apps with payment gateway
+                    </p>
+
+                    <!-- Card Row -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
+                        <!-- Card 1 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl">
+                            <img src="https://zaakpay.com/assets/images/cred.svg" alt="Credentials Icon"
+                                class="w-12 h-12 mb-4">
+                            <p class="text-gray-600 mb-4">Credentials for test integration</p>
+                            <button
+                                class="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
+                                Looking for options without code?
+                            </button>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl">
+                            <img src="https://zaakpay.com/assets/images/notes.svg" alt="Docs Icon"
+                                class="w-12 h-12 mb-4">
+                            <p class="text-gray-600 mb-4">How do I integrate with my project?</p>
+                            <button
+                                class="w-full px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition">
+                                See Tech Documentation
+                            </button>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl">
+                            <img src="https://zaakpay.com/assets/images/cred.svg" alt="No Code Icon"
+                                class="w-12 h-12 mb-4">
+                            <p class="text-gray-600 mb-4">Looking for options without code?</p>
+                            <button
+                                class="w-full px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition">
+                                See No-code solutions
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
